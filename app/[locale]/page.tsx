@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import { getDictionary } from "@i18n/get-dictionary";
 import { Locale } from "@/i18n-config";
+import hero from "@images/Property 1=Mobile, Property 2=Hero.png";
 
 export default async function Home({
   params: { locale },
@@ -14,13 +15,7 @@ export default async function Home({
     <main className={styles.main}>
       Home
       {dictionary.common.ok}
-      <Image src={"/images/404-hero.webp"} width={200} height={200} alt="" />
-      <Image
-        src={"/images/hero-image-2x.webp"}
-        width={966}
-        height={966}
-        alt=""
-      />
+      <Image src={hero} alt="" />
     </main>
   );
 }

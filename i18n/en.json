@@ -1,4 +1,7 @@
 {
+  "metadata": {
+    "description": "Description goes here"
+  },
   "common": {
     "ok": "ok"
   }
