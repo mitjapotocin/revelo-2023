@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "@images/logo.svg";
 
-const Logo = ({ alt }: string) => {
+const Logo = ({ alt }: { alt: string }) => {
   return <Image src={logo.src} width={119} height={35} alt={alt} priority />;
 };
 
