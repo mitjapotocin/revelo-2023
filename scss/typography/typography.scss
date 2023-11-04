@@ -1,51 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@400;500;600&display=swap');
-
 html {
-    font-family: $text-font-stack;
+  font-family: $text-font-stack;
 }
 
 h1 {
-    font-size: 60px;
-    line-height: 72px;
-    letter-spacing: -0.02em;
-    margin-bottom: 24px;
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
 
-    @include respond-to(768) {
-        font-size: 40px;
-        line-height: 1.5;
-    }
+  @include respond-to(768) {
+    font-size: 40px;
+    line-height: 1.5;
+  }
 }
 
 h2 {
-    font-size: 40px;
+  font-size: 40px;
 
-    @include respond-to(768) {
-        font-size: 30px;
-        line-height: 38px;
-    }
+  @include respond-to(768) {
+    font-size: 30px;
+    line-height: 38px;
+  }
 }
 
 h3 {
-    font-size: 30px;
-    font-weight: 500;
-    
-    @include respond-to(768) {
-        font-size: 24px;
-    }
+  font-size: 30px;
+  font-weight: 500;
+
+  @include respond-to(768) {
+    font-size: 24px;
+  }
 }
 
 h4 {
-    font-size: 24px;
-    font-weight: 500;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 .subtitle {
-    font-size: 18px;
-    line-height: 28px;
-    max-width: 768px;
+  font-size: 18px;
+  line-height: 28px;
+  max-width: 768px;
 
-    @include respond-to(768) {
-        font-size: 16px;
-        line-height: 1.5;
-    }
+  @include respond-to(768) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
