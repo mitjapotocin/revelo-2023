@@ -14,7 +14,13 @@ export default async function Home({
     <main className={styles.main}>
       Home
       {dictionary.common.ok}
-      <Image src={"/404-hero.webp"} width={200} height={200} alt="" />
+      <Image src={"/images/404-hero.webp"} width={200} height={200} alt="" />
+      <Image
+        src={"/images/hero-image-2x.webp"}
+        width={966}
+        height={966}
+        alt=""
+      />
     </main>
   );
 }
