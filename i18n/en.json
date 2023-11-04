@@ -3,7 +3,8 @@
     "description": "Description goes here"
   },
   "navigation": {
-    "home": "home"
+    "home": "home",
+    "logo": "Revelo logo"
   },
   "common": {
     "ok": "ok"

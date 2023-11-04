@@ -7,7 +7,12 @@ export default function Navigation({ dictionary }: any) {
     <nav>
       <div className="container">
         <Link href="/" className="nav-logo">
-          <Image src={logo.src} width={119} height={35} alt="" />
+          <Image
+            src={logo.src}
+            width={119}
+            height={35}
+            alt={dictionary.navigation.logo}
+          />
         </Link>
 
         <Link href="/">{dictionary.navigation.home}</Link>
@@ -20,7 +25,12 @@ export default function Navigation({ dictionary }: any) {
       </div>
 
       <Link href="/" className="nav-logo mobile">
-        <Image src={logo.src} width={119} height={35} alt="" />
+        <Image
+          src={logo.src}
+          width={119}
+          height={35}
+          alt={dictionary.navigation.logo}
+        />
       </Link>
 
       <div className="menu-button-wrapper">

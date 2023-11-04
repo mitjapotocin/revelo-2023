@@ -3,7 +3,8 @@
     "description": "Opis"
   },
   "navigation": {
-    "home": "domov"
+    "home": "domov",
+    "logo": "Revelo logo"
   },
   "common": {
     "ok": "v redu"
