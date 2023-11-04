@@ -21,7 +21,9 @@ export async function generateMetadata({
   params: { locale: Locale };
 }): Promise<Metadata> {
   const dictionary = await getDictionary(params.locale);
-
+  console.log(hero.src);
+  console.log(hero.src);
+  console.log(hero.src);
   return {
     title: "Revelo.ai",
     description: dictionary.metadata.description,
@@ -34,7 +36,7 @@ export async function generateMetadata({
       siteName: "My Website",
       images: [
         {
-          url: hero.src,
+          url: "https://myherbaltea.org" + hero.src,
         },
       ],
     },
