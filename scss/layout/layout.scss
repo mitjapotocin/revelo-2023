@@ -1,0 +1,32 @@
+.section {
+  padding: 108px 0;
+  background: #363f72;
+  color: #fff;
+
+  @include respond-to(768) {
+    padding: 64px 0;
+  }
+}
+
+.container {
+  width: 100%;
+  padding: 0 120px;
+  max-width: 1620px;
+  margin: 0 auto;
+
+  @include respond-to(1024) {
+    padding: 0 60px;
+  }
+
+  @include respond-to(768) {
+    padding: 0 16px;
+  }
+}
+
+.main-wrapper {
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

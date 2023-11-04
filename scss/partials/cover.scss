@@ -1,0 +1,100 @@
+.section.section-cover {
+    position: relative;
+    min-height: calc(100vh - 128px);
+    background: transparent;
+    color: var(--text-color-dark);
+    display: flex;
+    align-items: center;
+
+    @include respond-to(768) {
+        min-height: unset;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+
+        @include respond-to(768) {
+            display: block;
+            padding-top: 64px;
+        }
+    }
+
+    .left {
+        .content {
+            max-width: 548px;
+        }
+    }
+
+    .subtitle {
+        margin-bottom: 48px;
+        max-width: 480px;
+
+        @include respond-to(768) {
+            margin-bottom: 32px;
+        }
+    }
+
+    .left,
+    .right {
+        max-width: 50%;
+        width: 50%;
+
+        @include respond-to(768) {
+            max-width: initial;
+            width: initial;
+        }
+    }
+
+    .right {
+        position: relative;
+    }
+
+    .cover-image-right {
+        width: 140%;
+        max-width: 140%;
+        height: auto;
+
+        @include respond-to(768) {
+            width: 150%;
+            max-width: 150%;
+            margin: 0 0 32px -14%;
+        }
+    }
+
+    .cover-image-back {
+        z-index: -1;
+        position: absolute;
+        top: -60%;
+        right: -60%;
+        transition: transform 0.1s;
+        width: 140%;
+        max-width: 140%;
+        height: auto;
+
+        @include respond-to(768) {
+            right: -40%;
+            width: 120%;
+            max-width: 120%;
+            top: -40%;
+        }
+    }
+}
+
+.cover-aside {
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    border-radius: 12px;
+    padding: 48px;
+    width: 60%;
+    left: 50%;
+    transform: translate(-50%, 50%) scale(0.97);
+    transition: transform§ 0.1s;
+    text-align: center;
+
+    @include respond-to(768) {
+        width: calc(100% - 32px);
+        padding: 48px 24px;
+    }
+}

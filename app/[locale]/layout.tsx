@@ -4,6 +4,8 @@ import "./globals.css";
 import { Locale, i18n } from "@/i18n-config";
 import { getDictionary } from "@/i18n/get-dictionary";
 import hero from "@images/Property 1=Mobile, Property 2=Hero.png";
+import "../../scss/main.scss";
+import Navigation from "@/components/navigation";
 
 const montserrat = Montserrat({
   subsets: ["latin-ext"],
@@ -53,6 +55,7 @@ export default function RootLayout({
   return (
     <html lang={params.locale}>
       <body className={(inter.className, montserrat.className)}>
+        <Navigation />
         {children}
       </body>
     </html>

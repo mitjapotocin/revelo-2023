@@ -1,0 +1,58 @@
+.section.section-orange {
+    background: var(--main-background);
+    color: var(--text-color-dark);
+    text-align: center;
+    overflow: hidden;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    .subtitle {
+        margin: 0 auto 32px;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .circle {
+        position: absolute;
+        width: 364px;
+        height: 364px;
+        background: #fff;
+        border-radius: 50%;
+        
+        @include respond-to(768) {
+            display: none;
+        }
+
+        &.top {
+            right: 0;
+            top: 0;
+            transform: translate(36%, -80%);
+        }
+        
+        &.bottom {
+            background: #FFE6D5;
+            left: 0;
+            bottom: 0;
+            transform: translate(-36%, 80%);
+        }
+
+        img {
+            position: absolute;
+            left: 20%;
+            bottom: 24%;
+            left: 50%;
+            bottom: 24%;
+            transform: translateX(-50%);
+
+
+            @include respond-to(1800) {
+                left: 20%;
+                transform: none;
+            }
+        }
+    }
+}
