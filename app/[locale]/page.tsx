@@ -19,7 +19,7 @@ export default async function Home({
     <main className={styles.main}>
       Home
       {dictionary.common.ok}
-      <Image src={hero} alt="" />
+      <Image src={hero} alt="" priority />
     </main>
   );
 }

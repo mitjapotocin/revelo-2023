@@ -2,6 +2,9 @@
   "metadata": {
     "description": "Opis"
   },
+  "navigation": {
+    "home": "domov"
+  },
   "common": {
     "ok": "v redu"
   }

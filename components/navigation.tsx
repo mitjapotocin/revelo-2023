@@ -2,8 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "@images/logo.svg";
 
-export default function Navigation() {
-  console.log(logo);
+export default function Navigation({ dictionary }: any) {
   return (
     <nav>
       <div className="container">
@@ -11,7 +10,7 @@ export default function Navigation() {
           <Image src={logo.src} width={119} height={35} alt="" />
         </Link>
 
-        <Link href="/">Home</Link>
+        <Link href="/">{dictionary.navigation.home}</Link>
 
         <Link href="/about">About</Link>
 

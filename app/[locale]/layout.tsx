@@ -45,17 +45,19 @@ export async function generateMetadata({
   };
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
-  params,
+  params: { locale },
 }: {
   children: React.ReactNode;
   params: { locale: Locale };
 }) {
+  const dictionary = await getDictionary(locale);
+
   return (
-    <html lang={params.locale}>
+    <html lang={locale}>
       <body className={(inter.className, montserrat.className)}>
-        <Navigation />
+        <Navigation dictionary={dictionary} />
         {children}
       </body>
     </html>
