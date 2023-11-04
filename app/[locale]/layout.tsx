@@ -21,13 +21,13 @@ export async function generateMetadata({
   params: { locale: Locale };
 }): Promise<Metadata> {
   const dictionary = await getDictionary(params.locale);
-  console.log(hero.src);
-  console.log(hero.src);
-  console.log(hero.src);
+
   return {
     title: "Revelo.ai",
     description: dictionary.metadata.description,
     robots: "index, follow",
+
+    // TODO
     openGraph: {
       type: "website",
       url: "https://example.com",
@@ -36,7 +36,7 @@ export async function generateMetadata({
       siteName: "My Website",
       images: [
         {
-          url: "https://myherbaltea.org" + hero.src,
+          url: process.env.NEXT_DOMAIN_URL + hero.src,
         },
       ],
     },
