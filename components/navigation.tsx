@@ -16,10 +16,10 @@ export default function Navigation({ dictionary }: any) {
 
         <Link href="/">{dictionary.navigation.home}</Link>
 
-        <Link href="/about">About</Link>
+        <Link href="/about">{dictionary.navigation.about}</Link>
 
         <Link className="cta-button" href="/contact-us">
-          CTA
+          {dictionary.navigation.cta}
         </Link>
       </div>
 

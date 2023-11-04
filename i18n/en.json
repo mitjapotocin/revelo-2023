@@ -3,7 +3,7 @@
     "description": "Description goes here"
   },
   "navigation": {
-    "contactUs": "Contact us",
+    "cta": "Contact us",
     "aboutUs": "About us",
     "home": "Home",
     "logo": "Revelo logo"

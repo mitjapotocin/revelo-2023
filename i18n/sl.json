@@ -3,7 +3,7 @@
     "description": "Opis"
   },
   "navigation": {
-    "contactUs": "Kontaktirajte nas",
+    "cta": "Kontaktirajte nas",
     "aboutUs": "O nas",
     "home": "Domov",
     "logo": "Revelo logo"
