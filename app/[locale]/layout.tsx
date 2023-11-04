@@ -3,6 +3,7 @@ import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
 import { Locale, i18n } from "@/i18n-config";
 import { getDictionary } from "@/i18n/get-dictionary";
+import hero from "@images/Property 1=Mobile, Property 2=Hero.png";
 
 const montserrat = Montserrat({
   subsets: ["latin-ext"],
@@ -33,7 +34,7 @@ export async function generateMetadata({
       siteName: "My Website",
       images: [
         {
-          url: "/images/hero-image-2x.webp",
+          url: hero.src,
         },
       ],
     },
