@@ -2,17 +2,16 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "@images/logo.svg";
 
+const Logo = ({ alt }: string) => {
+  return <Image src={logo.src} width={119} height={35} alt={alt} priority />;
+};
+
 export default function Navigation({ dictionary }: any) {
   return (
     <nav>
       <div className="container">
         <Link href="/" className="nav-logo">
-          <Image
-            src={logo.src}
-            width={119}
-            height={35}
-            alt={dictionary.navigation.logo}
-          />
+          <Logo alt={dictionary.navigation.logo} />
         </Link>
 
         <Link href="/">{dictionary.navigation.home}</Link>
@@ -25,12 +24,7 @@ export default function Navigation({ dictionary }: any) {
       </div>
 
       <Link href="/" className="nav-logo mobile">
-        <Image
-          src={logo.src}
-          width={119}
-          height={35}
-          alt={dictionary.navigation.logo}
-        />
+        <Logo alt={dictionary.navigation.logo} />
       </Link>
 
       <div className="menu-button-wrapper">
