@@ -1,6 +1,6 @@
 import { getDictionary } from "@i18n/get-dictionary";
 import { Locale, i18n } from "@/i18n-config";
-import Cover from "@/components/Cover_";
+import Cover from "@/components/Cover";
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ locale }));

@@ -4,7 +4,7 @@ import { Locale, i18n } from "@/i18n-config";
 import { getDictionary } from "@/i18n/get-dictionary";
 import hero from "@images/Property 1=Mobile, Property 2=Hero.png";
 import "../../scss/main.scss";
-import Navigation from "@/components/Navigation_";
+import Navigation from "@/components/Navigation";
 
 const montserrat = Montserrat({
   subsets: ["latin-ext"],
