@@ -9,6 +9,80 @@ const translations = {
     logo: "Revelo logo",
   },
 
+  services: {
+    title: "Our services",
+    services: [
+      {
+        content:
+          "We help our clients identify innovation and business opportunities from data science and machine learning. We help organizations find the low-hanging fruit, decide on data-driven approaches, choose the right solution and tools, and set strategies to become data-driven organizations.",
+        title: "Consulting",
+        featureLabels: [
+          {
+            title: "Data-driven",
+            x: 20,
+            y: 70,
+          },
+          {
+            title: "Machine learning",
+            x: 50,
+            y: 20,
+          },
+        ],
+      },
+      {
+        content:
+          "Think of Lego bricks for data science. In Orange Data Mining, a tool we help develop and use for showcases, we can assemble a prototype within minutes of obtaining a clean data set. Orange allows us to explore new ideas and test them on the fly during client meetings without wasting time on coding and follow-up meetings.",
+        title: "Prototyping",
+        featureLabels: [
+          {
+            title: "On-the-fly data visualization",
+            x: 58,
+            y: 28,
+          },
+        ],
+      },
+      {
+        content:
+          "We support our clients in realizing the full potential offered by their data. Data is often stored in a raw form. We do data engineering, design machine learning and business analytics procedures, and implement decision support systems in the client’s information technology environment.",
+        title: "Integrated solutions",
+        featureLabels: [
+          {
+            title: "Data engineering",
+            x: 5,
+            y: 24,
+          },
+          {
+            title: "Smart implementation",
+            x: 22,
+            y: 65,
+          },
+          {
+            title: "Business analysis",
+            x: 56,
+            y: 46,
+          },
+        ],
+      },
+      {
+        content:
+          "We deliver data science know-how in an engaging, hands-on way to all relevant stakeholders in your organization. Because of visual programming and interactive visualizations, our workshops are short, interesting, and focused on problem-solving and business cases without computer science and programming details.",
+        title: "Training",
+        featureLabels: [
+          {
+            title: "Hands-on workshops",
+            x: 58,
+            y: 24,
+          },
+          {
+            title: "Visual programming",
+            x: 22,
+            y: 60,
+          },
+        ],
+      },
+    ],
+  },
+
   advantages: {
     subtitle:
       "We offer a unique approach to assist companies in the fast transition to a data-driven organization using the latest explainable machine learning approaches. Visual programming allows us to deliver the prototypes in weeks or even days. With hands-on training of users, we can engage them in the early stages of the development cycle.",

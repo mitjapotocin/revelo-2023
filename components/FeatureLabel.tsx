@@ -1,34 +1,9 @@
 "use client";
 
+import useIsInViewport from "@/hooks/useIsInViewport";
 import Checkmark from "@images/checkmark.svg";
 import Image from "next/image";
 import React from "react";
-
-function useIsInViewport(ref: any) {
-  const [isIntersecting, setIsIntersecting] = React.useState(false);
-
-  const [observer, setObserver] = React.useState<IntersectionObserver | null>(
-    null
-  );
-
-  React.useEffect(() => {
-    setObserver(
-      new IntersectionObserver(([entry]) =>
-        setIsIntersecting(entry.isIntersecting)
-      )
-    );
-  }, []);
-
-  React.useEffect(() => {
-    observer?.observe(ref.current);
-
-    return () => {
-      observer?.disconnect();
-    };
-  }, [ref, observer]);
-
-  return isIntersecting;
-}
 
 export default function FeatureLabel({
   text,

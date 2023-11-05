@@ -6,24 +6,24 @@ const Logo = ({ alt }: { alt: string }) => {
   return <Image src={logo.src} width={119} height={35} alt={alt} priority />;
 };
 
-export default function Navigation({ dictionary }: any) {
+export default function Navigation({ dictionary, locale }: any) {
   return (
     <nav>
       <div className="container">
-        <Link href="/" className="nav-logo">
+        <Link href={`/${locale}`} className="nav-logo">
           <Logo alt={dictionary.navigation.logo} />
         </Link>
 
-        <Link href="/">{dictionary.navigation.home}</Link>
+        <Link href={`/${locale}`}>{dictionary.navigation.home}</Link>
 
-        <Link href="/about">{dictionary.navigation.about}</Link>
+        <Link href={`/${locale}/about`}>{dictionary.navigation.about}</Link>
 
-        <Link className="cta-button" href="/contact-us">
+        <Link className="cta-button" href={`/${locale}/contact-us`}>
           {dictionary.navigation.cta}
         </Link>
       </div>
 
-      <Link href="/" className="nav-logo mobile">
+      <Link href={`/${locale}`} className="nav-logo mobile">
         <Logo alt={dictionary.navigation.logo} />
       </Link>
 
