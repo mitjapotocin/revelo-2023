@@ -19,7 +19,7 @@ export default function Cover({ dictionary }: { dictionary: ITranslations }) {
   });
 
   const {
-    props: { src: mobileSrc, mobileWidth, mobileHeight },
+    props: { src: mobileSrc },
   } = getImgProps({
     src: HeroImageMobile.src,
     alt: "",
@@ -60,6 +60,7 @@ export default function Cover({ dictionary }: { dictionary: ITranslations }) {
 
           <picture>
             <source
+              // @ts-ignore
               srcset={desktop}
               width={HeroImage.width}
               height={HeroImage.height}
@@ -73,13 +74,6 @@ export default function Cover({ dictionary }: { dictionary: ITranslations }) {
               alt=""
             />
           </picture>
-          {/* 
-          <Image
-            priority
-            className="cover-image cover-image-right"
-            src={HeroImage}
-            alt=""
-          /> */}
         </div>
 
         <aside className="cover-aside">
