@@ -7,19 +7,23 @@ import React from "react";
 function useIsInViewport(ref: any) {
   const [isIntersecting, setIsIntersecting] = React.useState(false);
 
-  const observer = React.useMemo(
-    () =>
-      new IntersectionObserver(([entry]) =>
-        setIsIntersecting(entry.isIntersecting)
-      ),
-    []
+  const [observer, setObserver] = React.useState<IntersectionObserver | null>(
+    null
   );
 
   React.useEffect(() => {
-    observer.observe(ref.current);
+    setObserver(
+      new IntersectionObserver(([entry]) =>
+        setIsIntersecting(entry.isIntersecting)
+      )
+    );
+  }, []);
+
+  React.useEffect(() => {
+    observer?.observe(ref.current);
 
     return () => {
-      observer.disconnect();
+      observer?.disconnect();
     };
   }, [ref, observer]);
 
@@ -36,8 +40,8 @@ export default function FeatureLabel({
   y: number;
 }) {
   const ref = React.useRef<any>();
-
   const isInViewport = useIsInViewport(ref);
+
   return (
     <div
       ref={ref}
