@@ -55,9 +55,11 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={(inter.className, montserrat.className, "main-wrapper")}>
-        <Navigation dictionary={dictionary} />
-        {children}
+      <body className={(inter.className, montserrat.className)}>
+        <div className="main-wrapper">
+          <Navigation dictionary={dictionary} />
+          {children}
+        </div>
       </body>
     </html>
   );
