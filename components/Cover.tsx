@@ -2,10 +2,30 @@ import { ITranslations } from "@/i18n/get-dictionary";
 import Link from "next/link";
 import CircleImage from "@images/circle-big-hero.svg";
 import HeroImage from "@images/hero-image-2x.webp";
+import HeroImageMobile from "@images/hero-image-2x_2_966x695.webp";
 import Image from "next/image";
+import { unstable_getImgProps as getImgProps } from "next/image";
 
 export default function Cover({ dictionary }: { dictionary: ITranslations }) {
   const { homeCover } = dictionary;
+
+  const {
+    props: { srcSet: desktop },
+  } = getImgProps({
+    src: HeroImage.src,
+    alt: "",
+    width: HeroImage.width,
+    height: HeroImage.height,
+  });
+
+  const {
+    props: { src: mobileSrc, mobileWidth, mobileHeight },
+  } = getImgProps({
+    src: HeroImageMobile.src,
+    alt: "",
+    width: HeroImageMobile.width,
+    height: HeroImageMobile.height,
+  });
 
   return (
     <section className="section section-cover">
@@ -38,12 +58,28 @@ export default function Cover({ dictionary }: { dictionary: ITranslations }) {
             alt=""
           />
 
+          <picture>
+            <source
+              srcset={desktop}
+              width={HeroImage.width}
+              height={HeroImage.height}
+              media="(min-width: 640px)"
+            />
+            <img
+              className="cover-image cover-image-right"
+              src={mobileSrc}
+              width={HeroImageMobile.width}
+              height={HeroImageMobile.height}
+              alt=""
+            />
+          </picture>
+          {/* 
           <Image
             priority
             className="cover-image cover-image-right"
             src={HeroImage}
             alt=""
-          />
+          /> */}
         </div>
 
         <aside className="cover-aside">
