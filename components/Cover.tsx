@@ -5,12 +5,13 @@ import HeroImage from "@images/hero-image-2x.webp";
 import HeroImageMobile from "@images/hero-image-2x_2_966x695.webp";
 import Image from "next/image";
 import { unstable_getImgProps as getImgProps } from "next/image";
+import FeatureLabel from "./FeatureLabel";
 
 export default function Cover({ dictionary }: { dictionary: ITranslations }) {
   const { homeCover } = dictionary;
 
   const {
-    props: { srcSet: desktop },
+    props: { srcSet: desktopSrcSet },
   } = getImgProps({
     src: HeroImage.src,
     alt: "",
@@ -45,10 +46,6 @@ export default function Cover({ dictionary }: { dictionary: ITranslations }) {
         </div>
 
         <div className="right">
-          {homeCover.featureLabels.map((l) => {
-            return <span key={l.title}>{l.title}</span>;
-          })}
-
           <Image
             priority
             className="cover-image cover-image-back"
@@ -60,8 +57,7 @@ export default function Cover({ dictionary }: { dictionary: ITranslations }) {
 
           <picture>
             <source
-              // @ts-ignore
-              srcset={desktop}
+              srcSet={desktopSrcSet}
               width={HeroImage.width}
               height={HeroImage.height}
               media="(min-width: 640px)"
@@ -74,6 +70,10 @@ export default function Cover({ dictionary }: { dictionary: ITranslations }) {
               alt=""
             />
           </picture>
+
+          {homeCover.featureLabels.map((l) => (
+            <FeatureLabel key={l.title} text={l.title} x={l.x} y={l.y} />
+          ))}
         </div>
 
         <aside className="cover-aside">

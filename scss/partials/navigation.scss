@@ -1,153 +1,151 @@
 $mobile-nav-height: 72px;
 
 nav {
-    position: absolute;
-    z-index: 99;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 80px;
-    display: flex;
-    align-items: center;
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
 
-    a {
-        color: rgb(151, 151, 151);
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: 500;
-        transition: color 0.3s ease;
-
-        &:hover {
-            color: var(--cta-color);
-            text-decoration: none;
-        }
-
-        @include respond-to(768) {
-            padding: 8px;
-        }
-    }
-
-    .nav-logo {
-        margin-right: auto;
-
-        &.mobile {
-            display: none;
-            padding: 0;
-            position: absolute;
-            left: 16px;
-            top: 20px;
-
-            @include respond-to(768) {
-                display: block;
-            }
-        }
-        @include respond-to(768) {
-            display: none;
-        }
-    }
-
-    .container {
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        gap: 24px;
-        position: relative;
-
-        @include respond-to(768) {
-            display: none;
-        }
-    }
-
-    @include respond-to(768) {
-        background: #fff;
-        height: $mobile-nav-height;
-
-        &.opened {
-            z-index: 999;
-            position: fixed;
-            height: 100%;
-            inset: 0;
-
-            .container {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                gap: 12px;
-            }
-        }
-
-        .cta-button {
-            margin-top: 8px;
-        }
-    }
-}
-
-
-.menu-button-wrapper {
-    display: none;
-    width: 38px;
-    height: 38px;
-    transition: all 0.3s;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    position: absolute;
-    right: 16px;
-    top: $mobile-nav-height / 2;
-    transform: translateY(-50%);
-
-    @include respond-to(768) {
-        display: flex;
-    }
-
-    .opened & {
-        .menu-button {
-            background: transparent !important;
-        }
-
-        .menu-button::before {
-            margin-top: 0px;
-            transform: rotate(225deg);
-        }
-
-        .menu-button::after {
-            margin-top: 0px;
-            transform: rotate(-225deg);
-        }
-    }
+  a {
+    color: rgb(151, 151, 151);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
 
     &:hover {
-
-        .menu-button,
-        .menu-button::before,
-        .menu-button::after {
-            opacity: 0.9;
-        }
+      color: var(--cta-color);
+      text-decoration: none;
     }
+
+    @include respond-to(768) {
+      padding: 8px;
+    }
+  }
+
+  .nav-logo {
+    margin-right: auto;
+
+    &.mobile {
+      display: none;
+      padding: 0;
+      position: absolute;
+      left: 16px;
+      top: 20px;
+
+      @include respond-to(768) {
+        display: block;
+      }
+    }
+    @include respond-to(768) {
+      display: none;
+    }
+  }
+
+  .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+
+    @include respond-to(768) {
+      display: none;
+    }
+  }
+
+  @include respond-to(768) {
+    background: #fff;
+    height: $mobile-nav-height;
+
+    &.opened {
+      z-index: 999;
+      position: fixed;
+      height: 100%;
+      inset: 0;
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+      }
+    }
+
+    .cta-button {
+      margin-top: 8px;
+    }
+  }
+}
+
+.menu-button-wrapper {
+  display: none;
+  width: 38px;
+  height: 38px;
+  transition: all 0.3s;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  right: 16px;
+  top: $mobile-nav-height / 2;
+  transform: translateY(-50%);
+
+  @include respond-to(768) {
+    display: flex;
+  }
+
+  .opened & {
+    .menu-button {
+      background: transparent !important;
+    }
+
+    .menu-button::before {
+      margin-top: 0px;
+      transform: rotate(225deg);
+    }
+
+    .menu-button::after {
+      margin-top: 0px;
+      transform: rotate(-225deg);
+    }
+  }
+
+  &:hover {
+    .menu-button,
+    .menu-button::before,
+    .menu-button::after {
+      opacity: 0.9;
+    }
+  }
 }
 
 .menu-button,
 .menu-button::before,
 .menu-button::after {
-    position: relative;
-    display: block;
-    background-color: var(--text-color-dark);
-    height: 2px;
-    border-radius: 1px;
-    width: 24px;
-    transition: all 0.3s;
-    border-radius: 2px;
+  position: relative;
+  display: block;
+  background-color: var(--text-color-dark);
+  height: 2px;
+  border-radius: 1px;
+  width: 24px;
+  transition: all 0.3s;
+  border-radius: 2px;
 }
 
 .menu-button::before {
-    position: absolute;
-    content: '';
-    margin-top: -8px;
+  position: absolute;
+  content: "";
+  margin-top: -8px;
 }
 
 .menu-button::after {
-    position: absolute;
-    content: '';
-    margin-top: 8px;
+  position: absolute;
+  content: "";
+  margin-top: 8px;
 }
