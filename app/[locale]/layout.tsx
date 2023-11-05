@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import { Inter, Montserrat } from "next/font/google";
-import "./globals.css";
 import { Locale, i18n } from "@/i18n-config";
 import { getDictionary } from "@/i18n/get-dictionary";
 import hero from "@images/Property 1=Mobile, Property 2=Hero.png";
 import "../../scss/main.scss";
-import Navigation from "@/components/navigation";
+import Navigation from "@/components/Navigation_";
 
 const montserrat = Montserrat({
   subsets: ["latin-ext"],
@@ -22,7 +21,7 @@ export async function generateMetadata({
 }: {
   params: { locale: Locale };
 }): Promise<Metadata> {
-  const dictionary = await getDictionary(params.locale);
+  const dictionary = getDictionary(params.locale);
 
   return {
     title: "Revelo.ai",
@@ -52,11 +51,11 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: { locale: Locale };
 }) {
-  const dictionary = await getDictionary(locale);
+  const dictionary = getDictionary(locale);
 
   return (
     <html lang={locale}>
-      <body className={(inter.className, montserrat.className)}>
+      <body className={(inter.className, montserrat.className, "main-wrapper")}>
         <Navigation dictionary={dictionary} />
         {children}
       </body>

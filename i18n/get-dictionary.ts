@@ -1,12 +1,11 @@
 import "server-only";
 import type { Locale } from "../i18n-config";
+import en from "./en";
+import sl from "./sl";
 
-// We enumerate all dictionaries here for better linting and typescript support
-// We also get the default import for cleaner types
-const dictionaries = {
-  en: () => import("./en.json").then((module) => module.default),
-  sl: () => import("./sl.json").then((module) => module.default),
-};
+export type ITranslations = typeof en;
 
-export const getDictionary = async (locale: Locale) =>
-  dictionaries[locale]?.() ?? dictionaries.en();
+const dictionaries = { en, sl };
+
+export const getDictionary = (locale: Locale): ITranslations =>
+  (dictionaries[locale] as ITranslations) ?? dictionaries.en;
