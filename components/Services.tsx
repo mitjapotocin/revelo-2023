@@ -9,6 +9,7 @@ import Image3 from "@images/integrated-squareimg.webp";
 import Image4 from "@images/training-squareimg.webp";
 import Image from "next/image";
 import React from "react";
+// import { useInView } from "react-intersection-observer";
 
 const SideImage = ({ index }: { index: number }) => {
   const sideImage = React.useMemo(() => {
@@ -42,7 +43,8 @@ export default function Services({
   dictionary: ITranslations;
 }) {
   const { services } = dictionary;
-
+  // https://www.npmjs.com/package/react-intersection-observer
+  // useInView
   return (
     <section className="section section-services">
       <div className="container">
