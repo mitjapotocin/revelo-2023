@@ -18,12 +18,12 @@ const translations = {
         title: "Consulting",
         featureLabels: [
           {
-            title: "Data-driven",
+            text: "Data-driven",
             x: 20,
             y: 70,
           },
           {
-            title: "Machine learning",
+            text: "Machine learning",
             x: 50,
             y: 20,
           },
@@ -35,7 +35,7 @@ const translations = {
         title: "Prototyping",
         featureLabels: [
           {
-            title: "On-the-fly data visualization",
+            text: "On-the-fly data visualization",
             x: 58,
             y: 28,
           },
@@ -47,17 +47,17 @@ const translations = {
         title: "Integrated solutions",
         featureLabels: [
           {
-            title: "Data engineering",
+            text: "Data engineering",
             x: 5,
             y: 24,
           },
           {
-            title: "Smart implementation",
+            text: "Smart implementation",
             x: 22,
             y: 65,
           },
           {
-            title: "Business analysis",
+            text: "Business analysis",
             x: 56,
             y: 46,
           },
@@ -69,12 +69,12 @@ const translations = {
         title: "Training",
         featureLabels: [
           {
-            title: "Hands-on workshops",
+            text: "Hands-on workshops",
             x: 58,
             y: 24,
           },
           {
-            title: "Visual programming",
+            text: "Visual programming",
             x: 22,
             y: 60,
           },
@@ -133,6 +133,12 @@ const translations = {
         y: 78,
       },
     ],
+  },
+
+  orange: {
+    title: "Orange data mining",
+    subtitle:
+      "We partner with the team that develops Orange, one of the most comprehensive, Python-based data mining frameworks. Orange combines visual programming, interactive visualizations, and machine learning in a unique platform for visual analytics. Revelo uses Orange for prototyping, training, and, where appropriate, for solution delivery in the form of add-ons or customized Orange enhancements.",
   },
 };
 

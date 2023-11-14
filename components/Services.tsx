@@ -10,6 +10,7 @@ import Image4 from "@images/training-squareimg.webp";
 import Image from "next/image";
 import React from "react";
 import { useInView } from "react-intersection-observer";
+import FeatureLabel from "./FeatureLabel";
 
 const SideImage = ({ index }: { index: number }) => {
   const sideImage = React.useMemo(() => {
@@ -77,6 +78,9 @@ const Service = ({
         )}
 
         <SideImage index={index} />
+        {service.featureLabels.map((l) => (
+          <FeatureLabel key={l.text} text={l.text} x={l.x} y={l.y} />
+        ))}
       </div>
     </div>
   );
