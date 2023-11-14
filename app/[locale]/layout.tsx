@@ -5,6 +5,7 @@ import { getDictionary } from "@/i18n/get-dictionary";
 import hero from "@images/Property 1=Mobile, Property 2=Hero.png";
 import "../../scss/main.scss";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 const montserrat = Montserrat({
   subsets: ["latin-ext"],
@@ -59,6 +60,7 @@ export default async function RootLayout({
         <div className="main-wrapper">
           <Navigation dictionary={dictionary} locale={locale} />
           {children}
+          <Footer dictionary={dictionary} />
         </div>
       </body>
     </html>

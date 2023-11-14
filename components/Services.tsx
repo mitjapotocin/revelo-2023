@@ -78,7 +78,7 @@ const Service = ({
         )}
 
         <SideImage index={index} />
-        {service.featureLabels.map((l) => (
+        {service.featureLabels.map((l: any) => (
           <FeatureLabel key={l.text} text={l.text} x={l.x} y={l.y} />
         ))}
       </div>

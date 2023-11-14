@@ -140,6 +140,10 @@ const translations = {
     subtitle:
       "We partner with the team that develops Orange, one of the most comprehensive, Python-based data mining frameworks. Orange combines visual programming, interactive visualizations, and machine learning in a unique platform for visual analytics. Revelo uses Orange for prototyping, training, and, where appropriate, for solution delivery in the form of add-ons or customized Orange enhancements.",
   },
+
+  footer: {
+    rights: "Revelo. All rights reserved.",
+  },
 };
 
 export default translations;
