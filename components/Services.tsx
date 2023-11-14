@@ -9,7 +9,7 @@ import Image3 from "@images/integrated-squareimg.webp";
 import Image4 from "@images/training-squareimg.webp";
 import Image from "next/image";
 import React from "react";
-// import { useInView } from "react-intersection-observer";
+import { useInView } from "react-intersection-observer";
 
 const SideImage = ({ index }: { index: number }) => {
   const sideImage = React.useMemo(() => {
@@ -37,14 +37,62 @@ const SideImage = ({ index }: { index: number }) => {
   );
 };
 
+const Service = ({
+  service,
+  index,
+  setServicesInView,
+}: {
+  service: any;
+  index: number;
+  setServicesInView: React.Dispatch<React.SetStateAction<number[]>>;
+}) => {
+  const { ref, inView } = useInView({ threshold: 0.35 });
+
+  React.useEffect(() => {
+    setServicesInView((v) =>
+      inView ? [...v, index] : v.filter((i) => i !== index)
+    );
+  }, [inView, index, setServicesInView]);
+
+  return (
+    <div
+      key={service.title}
+      ref={ref}
+      id={slugify(service.title)}
+      className="service"
+    >
+      <div className="left">
+        <h3>{service.title}</h3>
+        <p>{service.content}</p>
+      </div>
+      <div className="right">
+        {index === 0 && (
+          <Image
+            className="services-extra-image"
+            src={BlobImage.src}
+            width={702}
+            height={621}
+            alt=""
+          />
+        )}
+
+        <SideImage index={index} />
+      </div>
+    </div>
+  );
+};
+
 export default function Services({
   dictionary,
 }: {
   dictionary: ITranslations;
 }) {
   const { services } = dictionary;
-  // https://www.npmjs.com/package/react-intersection-observer
-  // useInView
+  const [servicesInView, setServicesInView] = React.useState<number[]>([]);
+  const lowestServiceInView = React.useMemo(() => {
+    return servicesInView.sort()[0];
+  }, [servicesInView]);
+
   return (
     <section className="section section-services">
       <div className="container">
@@ -54,8 +102,12 @@ export default function Services({
       <div className="services-nav sticky" data-services-nav>
         <div className="container">
           <div className="services-nav-inner-wrapper">
-            {services.services.map((s) => (
-              <a key={s.title} href={`#${slugify(s.title)}`}>
+            {services.services.map((s, index) => (
+              <a
+                key={s.title}
+                className={lowestServiceInView === index ? "active" : ""}
+                href={`#${slugify(s.title)}`}
+              >
                 {s.title}
               </a>
             ))}
@@ -66,25 +118,12 @@ export default function Services({
       <div className="container">
         <div>
           {services.services.map((s, index) => (
-            <div key={s.title} id={slugify(s.title)} className="service">
-              <div className="left">
-                <h3>{s.title}</h3>
-                <p>{s.content}</p>
-              </div>
-              <div className="right">
-                {index === 0 && (
-                  <Image
-                    className="services-extra-image"
-                    src={BlobImage.src}
-                    width={702}
-                    height={621}
-                    alt=""
-                  />
-                )}
-
-                <SideImage index={index} />
-              </div>
-            </div>
+            <Service
+              key={s.title}
+              service={s}
+              index={index}
+              setServicesInView={setServicesInView}
+            />
           ))}
         </div>
       </div>
