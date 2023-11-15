@@ -4,6 +4,7 @@ import Cover from "@/components/Cover";
 import Services from "@/components/Services";
 import Orange from "@/components/Orange";
 import Advantages from "@/components/Advantages";
+import Form from "@/components/Form";
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ locale }));
@@ -22,6 +23,7 @@ export default async function Home({
       <Services dictionary={dictionary} />
       <Orange dictionary={dictionary} />
       <Advantages dictionary={dictionary} />
+      <Form dictionary={dictionary} />
     </main>
   );
 }
