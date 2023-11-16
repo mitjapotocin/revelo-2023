@@ -6,7 +6,7 @@ export default function Form({ dictionary }: { dictionary: ITranslations }) {
   return (
     <div className="section section-contact">
       <div className="container">
-        <div className="contact-form section-contact-form">
+        <form className="contact-form section-contact-form">
           <h2>{form.title}</h2>
 
           <div className="subtitle">
@@ -17,18 +17,18 @@ export default function Form({ dictionary }: { dictionary: ITranslations }) {
           <div className="form-row">
             <div className="input-wrapper">
               <label>{form.firstname}</label>
-              <input type="text" name="user_first_name"></input>
+              <input type="text" name="user_first_name" required ></input>
             </div>
             <div className="input-wrapper">
               <label>{form.lastname}</label>
-              <input type="text" name="user_last_name"></input>
+              <input type="text" name="user_last_name" required></input>
             </div>
           </div>
 
           <div className="form-row">
             <div className="input-wrapper">
               <label>{form.email}</label>
-              <input type="email" name="user_email"></input>
+              <input type="email" name="user_email" required></input>
             </div>
           </div>
 
@@ -38,6 +38,7 @@ export default function Form({ dictionary }: { dictionary: ITranslations }) {
               <textarea
                 placeholder={form.msg_placeholder}
                 name="message"
+                required
               ></textarea>
             </div>
           </div>
@@ -49,7 +50,7 @@ export default function Form({ dictionary }: { dictionary: ITranslations }) {
               value={form.button}
             ></input>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   );
