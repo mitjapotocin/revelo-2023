@@ -150,6 +150,9 @@ const translations = {
     msg: "Message",
     msg_placeholder: "Enter your message...",
     button: "Contact us",
+    error: "Something went wrong. Please try again or email us directly.",
+    success:
+      "Thank you for contacting us. We will get back to you as soon as possible.",
   },
 
   footer: {

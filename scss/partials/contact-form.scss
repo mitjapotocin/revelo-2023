@@ -1,162 +1,159 @@
 @mixin focus-outline {
-    outline: var(--focus-ring-color) auto 1px;
-    outline-offset: 1px;
+  outline: var(--focus-ring-color) auto 1px;
+  outline-offset: 1px;
 }
 
 .section-contact-form {
-    h2,
-    .subtitle {
-        text-align: center;
-    }
+  h2,
+  .subtitle {
+    text-align: center;
+  }
 
-    .subtitle {
-        margin: 0 auto;
-    }
+  .subtitle {
+    margin: 0 auto;
+  }
 
-    .submit-wrapper {
-        text-align: center;
-    }
+  .submit-wrapper {
+    text-align: center;
+  }
 }
 
 .contact-form {
-    max-width: 480px;
-    margin: 0 auto;
+  max-width: 480px;
+  margin: 0 auto;
 
-    h2 {
-        margin-bottom: 20px;
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  .subtitle {
+    margin-bottom: 48px;
+    color: var(--text-color-medium);
+
+    a {
+      color: var(--cta-color);
+      text-decoration: none;
+      font-weight: 500;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 6px;
+  }
+
+  .form-row {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 24px;
+
+    // Honeypot
+    &.first {
+      display: none;
+    }
+  }
+
+  .input-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  input,
+  textarea {
+    &:focus-visible {
+      @include focus-outline;
+    }
+  }
+
+  input[type="submit"] {
+    &:active {
+      @include focus-outline;
+    }
+  }
+
+  input:not([type="submit"]),
+  textarea {
+    padding: 10px 14px;
+    height: 44px;
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #d0d5dd;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 12px;
+  }
+
+  input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+    margin-right: 12px;
+    opacity: 0;
+
+    & + div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 6px;
+      height: 20px;
+      width: 20px;
+      border: 1px solid #d0d5dd;
+      background: #fff;
+      pointer-events: none;
     }
 
-    .subtitle {
-        margin-bottom: 48px;
-        color: var(--text-color-medium);
+    &:checked {
+      & + div {
+        background: var(--cta-color);
 
-        a {
-            color: var(--cta-color);
-            text-decoration: none;
-            font-weight: 500;
-
-            &:hover {
-                text-decoration: underline;
-            }
+        &:before {
+          content: "\2713";
+          display: block;
+          padding: 0 3px;
+          margin-top: 2px;
+          font-size: 16px;
+          line-height: 1;
+          color: #fff;
         }
+      }
     }
+
+    &:focus,
+    &:focus-visible {
+      & + div {
+        @include focus-outline;
+      }
+    }
+  }
+
+  .checkbox-row {
+    margin-bottom: 32px;
+    position: relative;
+    display: flex;
 
     label {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 20px;
-        margin-bottom: 6px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 0;
     }
+  }
 
-    .form-row {
-        display: flex;
-        gap: 32px;
-        margin-bottom: 24px;
+  textarea {
+    resize: none;
+    height: 128px;
+  }
 
-        // Honeypot
-        &.first {
-            display: none;
-        }
-    }
-
-    .input-wrapper {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-    }
-
-    input, textarea {
-        &:focus-visible {
-            @include focus-outline;
-        }
-    }
-    
-    input[type="submit"] {
-        &:active {
-            @include focus-outline;
-        }
-    }
-
-    input:not([type="submit"]),
-    textarea {
-        padding: 10px 14px;
-        height: 44px;
-        width: 100%;
-        background: #FFFFFF;
-        border: 1px solid #D0D5DD;
-        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-        border-radius: 12px;
-    }
-
-    input[type="checkbox"] {
-        height: 20px;
-        width: 20px;
-        margin-right: 12px;
-        opacity: 0;
-
-        &+div {
-            position: absolute;
-            top: 0;
-            left: 0;
-            border-radius: 6px;
-            height: 20px;
-            width: 20px;
-            border: 1px solid #D0D5DD;
-            background: #fff;
-            pointer-events: none;
-        }
-
-        &:checked {
-            & + div {
-                background: var(--cta-color);
-                
-                &:before {
-                    content: '\2713';
-                    display: block;
-                    padding: 0 3px;
-                    margin-top: 2px;
-                    font-size: 16px;
-                    line-height: 1;
-                    color: #fff;
-                }
-            }
-        }
-
-        &:focus, &:focus-visible {
-            & + div {
-                @include focus-outline;
-            }
-        }
-    }
-
-    .checkbox-row {
-        margin-bottom: 32px;
-        position: relative;
-        display: flex;
-
-        label {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 20px;
-            margin-bottom: 0;
-        }
-    }
-
-    textarea {
-        resize: none;
-        height: 128px;
-    }
-
-    .warning {
-        display: none;
-        margin-bottom: 12px;
-        color: var(--warn-color);
-
-        &.show {
-            display: block;
-        }
-    }
-
-
-
+  .success {
+    margin-bottom: 12px;
+  }
+  .warning {
+    margin-bottom: 12px;
+    color: var(--warn-color);
+  }
 }
