@@ -104,19 +104,16 @@ const translations = {
       {
         content:
           "Our solutions use intelligent visualizations, nomograms, cluster characterizations, and decision rules. We focus on explainable AI because understanding what models do helps customers adopt, understand business, and optimize. Our solution complies with current legal requirements, including the EU AI Act. We mitigate bias, reduce market risk, and enable decision-making with explainable predictive modeling.",
-        img: "/images/advantages1.svg",
         title: "Explainable AI",
       },
       {
         content:
           "We prototype our systems in the Orange Data Mining suite to reduce time to market, minimize costs, and enable early engagement of the customers in the test and learn cycle. Our prototyping is swift: we work with the tools we own and open-source tools like Orange that we have helped develop.",
-        img: "/images/advantages2.svg",
         title: "Fast prototyping",
       },
       {
         content:
           "We excel in customer training. We use a unique, hands-on approach developed at the University of Ljubljana that institutions and companies worldwide have praised. The hands-on tutorials and exploratory workshops we design are quick and enjoyable and appeal to managers and end-users.",
-        img: "/images/advantages3.svg",
         title: "Customer training",
       },
     ],

@@ -3,40 +3,40 @@ const translations = {
   metadata: {
     url: "https://revelo.ai/",
     title: "Revelo.ai",
-    description: "We shed light on your data.",
+    description: "Osvetlimo vaše podatke.",
     siteName: "Revelo.ai",
-    keywords: ["data", "machine learning", "orange"],
+    keywords: ["podatki", "strojno učenje", "orange"],
 
     openGraph: {
       url: "https://revelo.ai/",
       title: "Revelo.ai",
-      description: "We shed light on your data.",
+      description: "Osvetlimo vaše podatke.",
       siteName: "Revelo.ai",
     },
   },
 
   navigation: {
-    cta: "Contact us",
-    aboutUs: "About us",
-    home: "Home",
-    logo: "Revelo logo",
+    cta: "Stopite v stik z nami",
+    aboutUs: "O nas",
+    home: "Domov",
+    logo: "Revelo logotip",
   },
 
   services: {
-    title: "Our services",
+    title: "Naše storitve",
     services: [
       {
         content:
-          "We help our clients identify innovation and business opportunities from data science and machine learning. We help organizations find the low-hanging fruit, decide on data-driven approaches, choose the right solution and tools, and set strategies to become data-driven organizations.",
-        title: "Consulting",
+          "Pomagamo našim strankam prepoznati inovacije ter poslovne priložnosti s področja znanosti o podatkih in strojnega učenja. Organizacijam pomagamo najti nizko ležeče sadje, se odločiti za pristope, osnovane na podatkih, izbrati pravo rešitev in orodja ter zastaviti strategije za postati organizacije, ki temeljijo na podatkih.",
+        title: "Svetovalne storitve",
         featureLabels: [
           {
-            text: "Data-driven",
+            text: "Podatkovno usmerjeno",
             x: 20,
             y: 70,
           },
           {
-            text: "Machine learning",
+            text: "Strojno učenje",
             x: 50,
             y: 20,
           },
@@ -44,11 +44,11 @@ const translations = {
       },
       {
         content:
-          "Think of Lego bricks for data science. In Orange Data Mining, a tool we help develop and use for showcases, we can assemble a prototype within minutes of obtaining a clean data set. Orange allows us to explore new ideas and test them on the fly during client meetings without wasting time on coding and follow-up meetings.",
-        title: "Prototyping",
+          "Predstavljajte si Lego kocke za znanost o podatkih. V orodju Orange Data Mining, ki smo ga pomagali razviti in uporabljati za predstavitve, lahko sestavimo prototip v nekaj minutah po pridobitvi čistega nabora podatkov. Orange nam omogoča raziskovanje novih idej in testiranje med sestanki s strankami, brez zapravljanja časa za kodiranje in nadaljnje sestanke.",
+        title: "Prototipiranje",
         featureLabels: [
           {
-            text: "On-the-fly data visualization",
+            text: "Vizualizacija podatkov med procesom",
             x: 58,
             y: 28,
           },
@@ -56,21 +56,21 @@ const translations = {
       },
       {
         content:
-          "We support our clients in realizing the full potential offered by their data. Data is often stored in a raw form. We do data engineering, design machine learning and business analytics procedures, and implement decision support systems in the client’s information technology environment.",
-        title: "Integrated solutions",
+          "Podpiramo naše stranke pri uresničevanju polnega potenciala, ki ga ponuja njihovi podatki. Podatki so pogosto shranjeni v surovi obliki. Izvajamo inženiring podatkov, načrtujemo postopke strojnega učenja in poslovne analize ter implementiramo sisteme za podporo odločanju v informacijskem okolju stranke.",
+        title: "Integrirane rešitve",
         featureLabels: [
           {
-            text: "Data engineering",
+            text: "Inženiring podatkov",
             x: 5,
             y: 24,
           },
           {
-            text: "Smart implementation",
+            text: "Pametna implementacija",
             x: 22,
             y: 65,
           },
           {
-            text: "Business analysis",
+            text: "Poslovna analiza",
             x: 56,
             y: 46,
           },
@@ -78,16 +78,16 @@ const translations = {
       },
       {
         content:
-          "We deliver data science know-how in an engaging, hands-on way to all relevant stakeholders in your organization. Because of visual programming and interactive visualizations, our workshops are short, interesting, and focused on problem-solving and business cases without computer science and programming details.",
-        title: "Training",
+          "Predstavljamo znanje znanosti o podatkih na privlačen, praktičen način vsem relevantnim deležnikom vaše organizacije. Zaradi vizualnega programiranja in interaktivnih vizualizacij so naše delavnice kratke, zanimive in osredotočene na reševanje problemov in poslovne primere brez podrobnosti računalništva in programiranja.",
+        title: "Usposabljanje",
         featureLabels: [
           {
-            text: "Hands-on workshops",
+            text: "Praktične delavnice",
             x: 58,
             y: 24,
           },
           {
-            text: "Visual programming",
+            text: "Vizualno programiranje",
             x: 22,
             y: 60,
           },
@@ -98,26 +98,23 @@ const translations = {
 
   advantages: {
     subtitle:
-      "We offer a unique approach to assist companies in the fast transition to a data-driven organization using the latest explainable machine learning approaches. Visual programming allows us to deliver the prototypes in weeks or even days. With hands-on training of users, we can engage them in the early stages of the development cycle.",
-    title: "Our advantages",
+      "Ponujamo edinstven pristop za pomoč podjetjem pri hitrem prehodu v organizacijo, ki temelji na podatkih, z uporabo najnovejših pristopov razložljivega strojnega učenja. Vizualno programiranje nam omogoča, da v nekaj tednih ali celo dneh dostavimo prototipe. Z izobraževanjem uporabnikov na terenu jih lahko vključimo že v zgodnji fazi razvojnega cikla.",
+    title: "Naše prednosti",
     advantages: [
       {
         content:
-          "Our solutions use intelligent visualizations, nomograms, cluster characterizations, and decision rules. We focus on explainable AI because understanding what models do helps customers adopt, understand business, and optimize. Our solution complies with current legal requirements, including the EU AI Act. We mitigate bias, reduce market risk, and enable decision-making with explainable predictive modeling.",
-        img: "/images/advantages1.svg",
-        title: "Explainable AI",
+          "Naše rešitve uporabljajo inteligentne vizualizacije, nomograme, karakterizacije skupin in odločitvena pravila. Osredotočamo se na razložljivo umetno inteligenco, saj razumevanje, kaj modeli počnejo, pomaga strankam pri sprejemanju, razumevanju poslovanja in optimizaciji. Naša rešitev je skladna z obstoječimi pravnimi zahtevami, vključno z zakonom EU o umetni inteligenci. Zmanjšujemo pristranskost, zmanjšujemo tržno tveganje in omogočamo odločanje z razložljivim napovednim modeliranjem.",
+        title: "Razložljiva AI",
       },
       {
         content:
-          "We prototype our systems in the Orange Data Mining suite to reduce time to market, minimize costs, and enable early engagement of the customers in the test and learn cycle. Our prototyping is swift: we work with the tools we own and open-source tools like Orange that we have helped develop.",
-        img: "/images/advantages2.svg",
-        title: "Fast prototyping",
+          "Prototipe naših sistemov oblikujemo v paketu Orange Data Mining, da zmanjšamo čas do trga, zmanjšamo stroške in omogočimo zgodnje vključevanje strank v cikel testiranja in učenja. Naše prototipiranje je hitro: delamo z orodji, ki jih imamo, in odprtokodnimi orodji, kot je Orange, ki smo ga pomagali razviti.",
+        title: "Hitro prototipiranje",
       },
       {
         content:
-          "We excel in customer training. We use a unique, hands-on approach developed at the University of Ljubljana that institutions and companies worldwide have praised. The hands-on tutorials and exploratory workshops we design are quick and enjoyable and appeal to managers and end-users.",
-        img: "/images/advantages3.svg",
-        title: "Customer training",
+          "Izstopamo pri izobraževanju strank. Uporabljamo edinstven pristop na terenu, razvit na Univerzi v Ljubljani, ki so ga pohvalili institucije in podjetja po vsem svetu. Hitri in zabavni vadbeni programi ter raziskovalne delavnice, ki jih oblikujemo, privlačijo menedžerje in končne uporabnike.",
+        title: "Izobraževanje strank",
       },
     ],
   },
