@@ -104,7 +104,7 @@ export default function Cover({
           <CoverImage page={page} />
 
           {dictionaryForCover.featureLabels &&
-            dictionaryForCover.featureLabels.map((l) => (
+            dictionaryForCover.featureLabels.map((l: any) => (
               <FeatureLabel key={l.title} text={l.title} x={l.x} y={l.y} />
             ))}
         </div>
