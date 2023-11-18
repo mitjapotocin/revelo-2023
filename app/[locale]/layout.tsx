@@ -25,20 +25,17 @@ export async function generateMetadata({
   const dictionary = getDictionary(params.locale);
 
   return {
-    title: "Revelo.ai",
+    title: dictionary.metadata.title,
     description: dictionary.metadata.description,
+    keywords: dictionary.metadata.keywords,
     robots: "index, follow",
 
-    // TODO
     openGraph: {
+      ...dictionary.metadata.openGraph,
       type: "website",
-      url: "https://example.com",
-      title: "My Website",
-      description: "My Website Description",
-      siteName: "My Website",
       images: [
         {
-          url: process.env.NEXT_DOMAIN_URL + hero.src,
+          url: hero.src,
         },
       ],
     },

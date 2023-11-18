@@ -25,7 +25,7 @@ export default function Footer({ dictionary }: { dictionary: ITranslations }) {
                 href="https://www.linkedin.com/company/revelo-d-o-o-/"
                 target="_blank"
               >
-                <Image {...linkedin} alt="" ariaLabel="linkedin" />
+                <Image {...linkedin} alt="" aria-label="linkedin" />
               </a>
             </div>
           </div>

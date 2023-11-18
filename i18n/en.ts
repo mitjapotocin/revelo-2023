@@ -1,7 +1,20 @@
 const translations = {
+  // Page metadata
   metadata: {
-    description: "Description goes here",
+    url: "https://revelo.ai/",
+    title: "Revelo.ai",
+    description: "We shed light on your data.",
+    siteName: "Revelo.ai",
+    keywords: ["data", "machine learning", "orange"],
+
+    openGraph: {
+      url: "https://revelo.ai/",
+      title: "Revelo.ai",
+      description: "We shed light on your data.",
+      siteName: "Revelo.ai",
+    },
   },
+
   navigation: {
     cta: "Contact us",
     aboutUs: "About us",
@@ -157,6 +170,33 @@ const translations = {
 
   footer: {
     rights: "Revelo. All rights reserved.",
+  },
+
+  // About page
+  aboutCover: {
+    title: "About us",
+    subtitle:
+      "We are a group of data scientists and engineers specializing in the fast delivery of machine learning solutions to innovative customers.",
+    aside:
+      "We established Revelo as a spin-off of the University of Ljubljana, where we collaborate with a group that develops Orange, one of the most innovative software tools for large-scale data science and visual analytics. We offer a wide range of services in the field of data engineering and implementation of machine learning, develop turnkey solutions and provide training workshops. We cooperate with pharmaceutical companies, automotive technology providers, retailers, banks, and businesses where data is the key to innovation and growth.",
+    image: "/images/about-hero.webp",
+  },
+
+  history: {
+    title: "Our History",
+    subtitle: [
+      "Revelo is a University of Ljubljana spin-off company. We founded Revelo to help users of Orange prepare the data, customize Orange, and train employees in data science.",
+      "Our first clients were from the pharma industry, retail, and banking. They all had a bunch of data, a budget, and an open mind toward new data analysis technologies. We maintain this diverse customer profile to this day.",
+      "The most recent requests we are fulfilling are related to explainability and responsible AI. With a motivated and innovative team and deep knowledge of explainable machine learning, user interfaces, and storytelling, we help clients transition to a data-driven organization.",
+    ],
+
+    featureLabels: [
+      {
+        title: "Founded in 2015",
+        x: 30,
+        y: 20,
+      },
+    ],
   },
 };
 

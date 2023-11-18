@@ -19,7 +19,7 @@ export default async function Home({
 
   return (
     <main>
-      <Cover dictionary={dictionary} />
+      <Cover dictionaryForCover={dictionary.homeCover} page="home" />
       <Services dictionary={dictionary} />
       <Orange dictionary={dictionary} />
       <Advantages dictionary={dictionary} />

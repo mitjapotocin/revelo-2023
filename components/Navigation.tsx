@@ -16,7 +16,7 @@ export default function Navigation({ dictionary, locale }: any) {
 
         <Link href={`/${locale}`}>{dictionary.navigation.home}</Link>
 
-        <Link href={`/${locale}/about`}>{dictionary.navigation.about}</Link>
+        <Link href={`/${locale}/about`}>{dictionary.navigation.aboutUs}</Link>
 
         <Link className="cta-button" href={`/${locale}/contact-us`}>
           {dictionary.navigation.cta}
