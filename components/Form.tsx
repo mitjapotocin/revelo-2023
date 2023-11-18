@@ -16,74 +16,76 @@ export default function Form({ dictionary }: { dictionary: ITranslations }) {
   const { form } = dictionary;
   const { register, handleSubmit } = useForm<Inputs>();
   const formRef = useRef<any>();
-  const { error, success, onSubmit } = usePostForm(formRef);
+  const { error, success, loading, onSubmit } = usePostForm(formRef);
 
   return (
     <div className="section section-contact">
       <div className="container">
-        <form
-          ref={formRef}
-          className="contact-form section-contact-form"
-          onSubmit={handleSubmit(onSubmit)}
-        >
-          <h2>{form.title}</h2>
+        <fieldset disabled={success || loading}>
+          <form
+            ref={formRef}
+            className="contact-form section-contact-form"
+            onSubmit={handleSubmit(onSubmit)}
+          >
+            <h2>{form.title}</h2>
 
-          <div className="subtitle">
-            {form.content}
-            <a href="mailto:info@revelo.bi">info@revelo.bi</a>
-          </div>
+            <div className="subtitle">
+              {form.content}
+              <a href="mailto:info@revelo.bi">info@revelo.bi</a>
+            </div>
 
-          {/* For emailjs */}
-          <input type="hidden" name="contact_number" />
+            {/* For emailjs */}
+            <input type="hidden" name="contact_number" />
 
-          <div className="form-row">
-            <div className="input-wrapper">
-              <label>{form.firstname}</label>
+            <div className="form-row">
+              <div className="input-wrapper">
+                <label>{form.firstname}</label>
+                <input
+                  type="text"
+                  {...register("user_first_name", { required: true })}
+                ></input>
+              </div>
+              <div className="input-wrapper">
+                <label>{form.lastname}</label>
+                <input
+                  type="text"
+                  {...register("user_last_name", { required: false })}
+                ></input>
+              </div>
+            </div>
+
+            <div className="form-row">
+              <div className="input-wrapper">
+                <label>{form.email}</label>
+                <input
+                  type="email"
+                  {...register("user_email", { required: true })}
+                ></input>
+              </div>
+            </div>
+
+            <div className="form-row">
+              <div className="input-wrapper">
+                <label>{form.msg}</label>
+                <textarea
+                  placeholder={form.msg_placeholder}
+                  {...register("message", { required: true })}
+                ></textarea>
+              </div>
+            </div>
+
+            {error && <div className="warning">{form.error}</div>}
+            {success && <div className="success">{form.success}</div>}
+
+            <div className="submit-wrapper">
               <input
-                type="text"
-                {...register("user_first_name", { required: true })}
+                className="cta-button cta-button-md"
+                type="submit"
+                value={form.button}
               ></input>
             </div>
-            <div className="input-wrapper">
-              <label>{form.lastname}</label>
-              <input
-                type="text"
-                {...register("user_last_name", { required: false })}
-              ></input>
-            </div>
-          </div>
-
-          <div className="form-row">
-            <div className="input-wrapper">
-              <label>{form.email}</label>
-              <input
-                type="email"
-                {...register("user_email", { required: true })}
-              ></input>
-            </div>
-          </div>
-
-          <div className="form-row">
-            <div className="input-wrapper">
-              <label>{form.msg}</label>
-              <textarea
-                placeholder={form.msg_placeholder}
-                {...register("message", { required: true })}
-              ></textarea>
-            </div>
-          </div>
-
-          {error && <div className="warning">{form.error}</div>}
-          {success && <div className="success">{form.success}</div>}
-
-          <div className="submit-wrapper">
-            <input
-              className="cta-button cta-button-md"
-              type="submit"
-              value={form.button}
-            ></input>
-          </div>
-        </form>
+          </form>
+        </fieldset>
       </div>
     </div>
   );
