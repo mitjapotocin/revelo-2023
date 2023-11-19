@@ -62,6 +62,19 @@ export default function Navigation({ dictionary, locale }: any) {
         >
           {dictionary.navigation.cta}
         </NavLink>
+
+        <div className="country-selector-wrapper">
+          {["sl", "en"].map((l) => (
+            <NavLink
+              key={l}
+              href={`/${l}`}
+              setNavOpened={setNavOpened}
+              className={l === locale ? "selected" : ""}
+            >
+              {l}
+            </NavLink>
+          ))}
+        </div>
       </div>
 
       <NavLink

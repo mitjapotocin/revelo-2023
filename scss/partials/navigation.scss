@@ -81,6 +81,32 @@ nav {
       margin-top: 8px;
     }
   }
+
+  .country-selector-wrapper {
+    margin-left: -4px;
+    display: flex;
+    text-transform: uppercase;
+
+    @include respond-to(768) {
+      margin-left: 0;
+      margin-top: 12px;
+    }
+
+    a {
+      line-height: 1;
+      padding: 4px 6px;
+    }
+
+    a + a {
+      border-left: 1px solid var(--text-color-dark);
+    }
+
+    .selected {
+      font-weight: 600;
+      pointer-events: none;
+      color: var(--text-color-dark);
+    }
+  }
 }
 
 .menu-button-wrapper {
