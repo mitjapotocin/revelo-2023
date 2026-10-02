@@ -178,6 +178,16 @@ const translations = {
     subheading: "Visual programming for data science",
     subtitle:
       "We have been working closely with the team behind Orange Data Mining for many years. Orange combines visual programming, interactive data exploration and machine learning in an environment that allows ideas to be tested and analytical workflows to be developed quickly. We use Orange for prototyping, education and specialised analytical solutions, and develop custom components and applications where needed.",
+    link: "Learn more about Orange data mining tool →",
+    sections: [
+      {
+        subheading: "Orange Lab",
+        content:
+          "We are working on Orange Lab, a web-based environment for visual data analytics that brings Orange workflows to the browser. It supports collaborative work and makes it possible to embed interactive parts of analytical workflows directly into web pages and applications.",
+        link: "Learn more about Orange Lab →",
+        url: "https://arxiv.org/abs/2606.09239",
+      },
+    ],
   },
 
   form: {
