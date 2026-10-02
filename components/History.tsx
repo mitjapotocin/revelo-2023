@@ -9,7 +9,7 @@ export default function History({ dictionary }: { dictionary: ITranslations }) {
   return (
     <div className="section section-advantages history">
       <div className="container">
-        <div className="advantages-wrapper">
+        <div className="feature-list-wrapper">
           <div className="history-content">
             <h2>{history.title}</h2>
 
