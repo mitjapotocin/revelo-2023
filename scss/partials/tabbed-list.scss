@@ -46,6 +46,11 @@
     display: flex;
     padding: 48px 0 0;
     align-items: center;
+    scroll-margin-top: 92px;
+
+    @include respond-to(768) {
+      scroll-margin-top: 0;
+    }
 
     &:nth-child(1) {
       padding-top: 76px;
