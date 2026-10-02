@@ -24,19 +24,48 @@ const translations = {
 
   services: {
     title: "Our services",
+    subtitle:
+      "We combine data science, AI and software development to solve complex problems and turn ideas into working solutions.",
     services: [
       {
         content:
-          "We help our clients identify innovation and business opportunities from data science and machine learning. We help organizations find the low-hanging fruit, decide on data-driven approaches, choose the right solution and tools, and set strategies to become data-driven organizations.",
-        title: "Consulting",
+          "We develop analytical and AI-based solutions for complex data and real-world problems. Our focus is on using the right methods for the problem — from statistical modelling and machine learning to modern AI — and turning them into robust, transparent and useful solutions.",
+        title: "Applied AI & data science",
+      },
+      {
+        content:
+          "We turn ideas into working prototypes quickly, using real data and involving users early. Our experience with visual programming and Orange allows us to explore different approaches, test what works and reduce the time and cost of developing the final solution.",
+        title: "Rapid prototyping",
+      },
+      {
+        content:
+          "We build applications and infrastructure around data, analytics and scientific methods — from specialised analytical tools to complete web applications and data platforms. We take solutions beyond the model or prototype and make them usable in practice.",
+        title: "Data-driven software & infrastructure",
+      },
+      {
+        content:
+          "We work closely with domain experts in areas where understanding the problem matters as much as the technology. We translate complex methodologies, research processes and domain knowledge into analytical tools and software tailored to how people actually work.",
+        title: "Scientific & domain-specific solutions",
+      },
+    ],
+  },
+
+  advantages: {
+    title: "Selected work",
+    advantages: [
+      {
+        content:
+          "Our solutions use intelligent visualizations, nomograms, cluster characterizations, and decision rules. We focus on explainable AI because understanding what models do helps customers adopt, understand business, and optimize. Our solution complies with current legal requirements, including the EU AI Act. We mitigate bias, reduce market risk, and enable decision-making with explainable predictive modeling.",
+        title: "PAY DAY",
+        subtitle: "Pay transparency in practice",
         featureLabels: [
           {
-            text: "Data-driven",
+            text: "Pay transparency",
             x: 20,
             y: 70,
           },
           {
-            text: "Machine learning",
+            text: "Payroll analytics",
             x: 50,
             y: 20,
           },
@@ -44,77 +73,76 @@ const translations = {
       },
       {
         content:
-          "Think of Lego bricks for data science. In Orange Data Mining, a tool we help develop and use for showcases, we can assemble a prototype within minutes of obtaining a clean data set. Orange allows us to explore new ideas and test them on the fly during client meetings without wasting time on coding and follow-up meetings.",
-        title: "Prototyping",
+          "We prototype our systems in the Orange Data Mining suite to reduce time to market, minimize costs, and enable early engagement of the customers in the test and learn cycle. Our prototyping is swift: we work with the tools we own and open-source tools like Orange that we have helped develop.",
+        title: "Paygap.report",
+        subtitle: "From job evaluation to pay gap analysis",
         featureLabels: [
           {
-            text: "On-the-fly data visualization",
+            text: "Job evaluation",
             x: 58,
             y: 28,
           },
-        ],
-      },
-      {
-        content:
-          "We support our clients in realizing the full potential offered by their data. Data is often stored in a raw form. We do data engineering, design machine learning and business analytics procedures, and implement decision support systems in the client’s information technology environment.",
-        title: "Integrated solutions",
-        featureLabels: [
           {
-            text: "Data engineering",
-            x: 5,
-            y: 24,
-          },
-          {
-            text: "Smart implementation",
-            x: 22,
-            y: 65,
-          },
-          {
-            text: "Business analysis",
-            x: 56,
-            y: 46,
-          },
-        ],
-      },
-      {
-        content:
-          "We deliver data science know-how in an engaging, hands-on way to all relevant stakeholders in your organization. Because of visual programming and interactive visualizations, our workshops are short, interesting, and focused on problem-solving and business cases without computer science and programming details.",
-        title: "Training",
-        featureLabels: [
-          {
-            text: "Hands-on workshops",
-            x: 58,
-            y: 24,
-          },
-          {
-            text: "Visual programming",
+            text: "Pay gap analytics",
             x: 22,
             y: 60,
           },
         ],
       },
-    ],
-  },
-
-  advantages: {
-    subtitle:
-      "We offer a unique approach to assist companies in the fast transition to a data-driven organization using the latest explainable machine learning approaches. Visual programming allows us to deliver the prototypes in weeks or even days. With hands-on training of users, we can engage them in the early stages of the development cycle.",
-    title: "Our advantages",
-    advantages: [
-      {
-        content:
-          "Our solutions use intelligent visualizations, nomograms, cluster characterizations, and decision rules. We focus on explainable AI because understanding what models do helps customers adopt, understand business, and optimize. Our solution complies with current legal requirements, including the EU AI Act. We mitigate bias, reduce market risk, and enable decision-making with explainable predictive modeling.",
-        title: "Explainable AI",
-      },
-      {
-        content:
-          "We prototype our systems in the Orange Data Mining suite to reduce time to market, minimize costs, and enable early engagement of the customers in the test and learn cycle. Our prototyping is swift: we work with the tools we own and open-source tools like Orange that we have helped develop.",
-        title: "Fast prototyping",
-      },
       {
         content:
           "We excel in customer training. We use a unique, hands-on approach developed at the University of Ljubljana that institutions and companies worldwide have praised. The hands-on tutorials and exploratory workshops we design are quick and enjoyable and appeal to managers and end-users.",
-        title: "Customer training",
+        title: "Research infrastructure",
+        subtitle: "Connecting research data",
+        featureLabels: [
+          {
+            text: "Data integration",
+            x: 58,
+            y: 24,
+          },
+          {
+            text: "Semantic search",
+            x: 22,
+            y: 60,
+          },
+        ],
+      },
+      {
+        content:
+          "We work with scientific and industrial R&D teams on problems where experimental data, domain knowledge and advanced analytics come together. Our work includes machine learning, image and experimental data analysis, predictive modelling and visual analytics, as well as specialised software for scientific workflows.",
+        title: "Scientific analytics",
+        subtitle: "Data science for R&D",
+        featureLabels: [
+          {
+            text: "R&D analytics",
+            x: 58,
+            y: 24,
+          },
+          {
+            text: "Machine learning",
+            x: 22,
+            y: 60,
+          },
+        ],
+      },
+      {
+        content:
+          "DALI4US brings data science and machine learning into an interactive learning environment.\n" +
+          "Revelo developed the infrastructure connecting web-based educational content with live Orange workflows, allowing students and teachers to experiment with data and machine-learning methods directly through their browser.\n",
+        title: "DALI4US",
+        subtitle: "Interactive data science education",
+        featureLabels: [
+          {
+            text: "Interactive learning",
+            x: 58,
+            y: 24,
+          },
+          {
+            text: "Orange workflows",
+            x: 22,
+            y: 60,
+          },
+        ],
       },
     ],
   },

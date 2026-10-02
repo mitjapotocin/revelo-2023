@@ -6,6 +6,7 @@ import BlobImage from "@images/services-blob.svg";
 import Image1 from "@images/consulting-squareimg.webp";
 import Image2 from "@images/prototyping-squareimg.webp";
 import Image3 from "@images/training-squareimg.webp";
+import Image4 from "@images/integrated-squareimg.webp";
 import Image from "next/image";
 import React from "react";
 import { useInView } from "react-intersection-observer";
@@ -21,6 +22,8 @@ const SideImage = ({ index }: { index: number }) => {
         return Image2;
       case 2:
         return Image3;
+      case 3:
+        return Image4;
     }
   }, [index]);
 

@@ -24,19 +24,48 @@ const translations = {
 
   services: {
     title: "Naše storitve",
+    subtitle:
+      "Združujemo podatkovno znanost, umetno inteligenco in razvoj programske opreme, da rešujemo kompleksne probleme in ideje spreminjamo v delujoče rešitve.",
     services: [
       {
         content:
-          "Pomagamo našim strankam prepoznati inovacije ter poslovne priložnosti s področja znanosti o podatkih in strojnega učenja. Organizacijam pomagamo najti nizko ležeče sadje, se odločiti za pristope, osnovane na podatkih, izbrati pravo rešitev in orodja ter zastaviti strategije za postati organizacije, ki temeljijo na podatkih.",
-        title: "Svetovalne storitve",
+          "Razvijamo analitične rešitve in rešitve na osnovi umetne inteligence za kompleksne podatke in resnične probleme. Osredotočamo se na izbiro pravih metod za posamezen problem – od statističnega modeliranja in strojnega učenja do sodobne umetne inteligence – ter jih pretvorimo v robustne, pregledne in uporabne rešitve.",
+        title: "Uporabna umetna inteligenca in podatkovna znanost",
+      },
+      {
+        content:
+          "Ideje hitro pretvorimo v delujoče prototipe, pri čemer uporabljamo resnične podatke in uporabnike vključimo že zgodaj. Izkušnje z vizualnim programiranjem in orodjem Orange nam omogočajo, da raziščemo različne pristope, preizkusimo, kaj deluje, ter skrajšamo čas in znižamo stroške razvoja končne rešitve.",
+        title: "Hitro prototipiranje",
+      },
+      {
+        content:
+          "Razvijamo aplikacije in infrastrukturo za podatke, analitiko in znanstvene metode – od specializiranih analitičnih orodij do celovitih spletnih aplikacij in podatkovnih platform. Rešitve peljemo dlje od modela ali prototipa in jih naredimo uporabne v praksi.",
+        title: "Podatkovno podprta programska oprema in infrastruktura",
+      },
+      {
+        content:
+          "Tesno sodelujemo s strokovnjaki s področij, kjer je razumevanje problema enako pomembno kot tehnologija. Kompleksne metodologije, raziskovalne procese in domensko znanje prevedemo v analitična orodja in programsko opremo, prilagojeno temu, kako ljudje dejansko delajo.",
+        title: "Znanstvene in domensko specifične rešitve",
+      },
+    ],
+  },
+
+  advantages: {
+    title: "Izbrani projekti",
+    advantages: [
+      {
+        content:
+          "Naše rešitve uporabljajo inteligentne vizualizacije, nomograme, karakterizacije skupin in odločitvena pravila. Osredotočamo se na razložljivo umetno inteligenco, saj razumevanje, kaj modeli počnejo, pomaga strankam pri sprejemanju, razumevanju poslovanja in optimizaciji. Naša rešitev je skladna z obstoječimi pravnimi zahtevami, vključno z zakonom EU o umetni inteligenci. Zmanjšujemo pristranskost, zmanjšujemo tržno tveganje in omogočamo odločanje z razložljivim napovednim modeliranjem.",
+        title: "PAY DAY",
+        subtitle: "Transparentnost plač v praksi",
         featureLabels: [
           {
-            text: "Podatkovno usmerjeno",
+            text: "Transparentnost plač",
             x: 20,
             y: 70,
           },
           {
-            text: "Strojno učenje",
+            text: "Analitika plač",
             x: 50,
             y: 20,
           },
@@ -44,77 +73,76 @@ const translations = {
       },
       {
         content:
-          "Predstavljajte si Lego kocke za znanost o podatkih. V orodju Orange Data Mining, ki smo ga pomagali razviti in uporabljati za predstavitve, lahko sestavimo prototip v nekaj minutah po pridobitvi čistega nabora podatkov. Orange nam omogoča raziskovanje novih idej in testiranje med sestanki s strankami, brez zapravljanja časa za kodiranje in nadaljnje sestanke.",
-        title: "Prototipiranje",
+          "Prototipe naših sistemov oblikujemo v paketu Orange Data Mining, da zmanjšamo čas do trga, zmanjšamo stroške in omogočimo zgodnje vključevanje strank v cikel testiranja in učenja. Naše prototipiranje je hitro: delamo z orodji, ki jih imamo, in odprtokodnimi orodji, kot je Orange, ki smo ga pomagali razviti.",
+        title: "Paygap.report",
+        subtitle: "Od vrednotenja delovnih mest do analize plačnih vrzeli",
         featureLabels: [
           {
-            text: "Vizualizacija podatkov med procesom",
+            text: "Vrednotenje delovnih mest",
             x: 58,
             y: 28,
           },
-        ],
-      },
-      {
-        content:
-          "Podpiramo naše stranke pri uresničevanju polnega potenciala, ki ga ponuja njihovi podatki. Podatki so pogosto shranjeni v surovi obliki. Izvajamo inženiring podatkov, načrtujemo postopke strojnega učenja in poslovne analize ter implementiramo sisteme za podporo odločanju v informacijskem okolju stranke.",
-        title: "Integrirane rešitve",
-        featureLabels: [
           {
-            text: "Inženiring podatkov",
-            x: 5,
-            y: 24,
-          },
-          {
-            text: "Pametna implementacija",
-            x: 22,
-            y: 65,
-          },
-          {
-            text: "Poslovna analiza",
-            x: 56,
-            y: 46,
-          },
-        ],
-      },
-      {
-        content:
-          "Predstavljamo znanje znanosti o podatkih na privlačen, praktičen način vsem relevantnim deležnikom vaše organizacije. Zaradi vizualnega programiranja in interaktivnih vizualizacij so naše delavnice kratke, zanimive in osredotočene na reševanje problemov in poslovne primere brez podrobnosti računalništva in programiranja.",
-        title: "Usposabljanje",
-        featureLabels: [
-          {
-            text: "Praktične delavnice",
-            x: 58,
-            y: 24,
-          },
-          {
-            text: "Vizualno programiranje",
+            text: "Analitika plačnih vrzeli",
             x: 22,
             y: 60,
           },
         ],
       },
-    ],
-  },
-
-  advantages: {
-    subtitle:
-      "Ponujamo edinstven pristop za pomoč podjetjem pri hitrem prehodu v organizacijo, ki temelji na podatkih, z uporabo najnovejših pristopov razložljivega strojnega učenja. Vizualno programiranje nam omogoča, da v nekaj tednih ali celo dneh dostavimo prototipe. Z izobraževanjem uporabnikov na terenu jih lahko vključimo že v zgodnji fazi razvojnega cikla.",
-    title: "Naše prednosti",
-    advantages: [
-      {
-        content:
-          "Naše rešitve uporabljajo inteligentne vizualizacije, nomograme, karakterizacije skupin in odločitvena pravila. Osredotočamo se na razložljivo umetno inteligenco, saj razumevanje, kaj modeli počnejo, pomaga strankam pri sprejemanju, razumevanju poslovanja in optimizaciji. Naša rešitev je skladna z obstoječimi pravnimi zahtevami, vključno z zakonom EU o umetni inteligenci. Zmanjšujemo pristranskost, zmanjšujemo tržno tveganje in omogočamo odločanje z razložljivim napovednim modeliranjem.",
-        title: "Razložljiva AI",
-      },
-      {
-        content:
-          "Prototipe naših sistemov oblikujemo v paketu Orange Data Mining, da zmanjšamo čas do trga, zmanjšamo stroške in omogočimo zgodnje vključevanje strank v cikel testiranja in učenja. Naše prototipiranje je hitro: delamo z orodji, ki jih imamo, in odprtokodnimi orodji, kot je Orange, ki smo ga pomagali razviti.",
-        title: "Hitro prototipiranje",
-      },
       {
         content:
           "Izstopamo pri izobraževanju strank. Uporabljamo edinstven pristop na terenu, razvit na Univerzi v Ljubljani, ki so ga pohvalili institucije in podjetja po vsem svetu. Hitri in zabavni vadbeni programi ter raziskovalne delavnice, ki jih oblikujemo, privlačijo menedžerje in končne uporabnike.",
-        title: "Izobraževanje strank",
+        title: "Raziskovalna infrastruktura",
+        subtitle: "Povezovanje raziskovalnih podatkov",
+        featureLabels: [
+          {
+            text: "Integracija podatkov",
+            x: 58,
+            y: 24,
+          },
+          {
+            text: "Semantično iskanje",
+            x: 22,
+            y: 60,
+          },
+        ],
+      },
+      {
+        content:
+          "Sodelujemo z znanstvenimi in industrijskimi razvojnimi skupinami pri problemih, kjer se srečajo eksperimentalni podatki, domensko znanje in napredna analitika. Naše delo vključuje strojno učenje, analizo slik in eksperimentalnih podatkov, napovedno modeliranje in vizualno analitiko ter specializirano programsko opremo za znanstvene delovne procese.",
+        title: "Znanstvena analitika",
+        subtitle: "Podatkovna znanost za raziskave in razvoj",
+        featureLabels: [
+          {
+            text: "Analitika za R&R",
+            x: 58,
+            y: 24,
+          },
+          {
+            text: "Strojno učenje",
+            x: 22,
+            y: 60,
+          },
+        ],
+      },
+      {
+        content:
+          "DALI4US prinaša podatkovno znanost in strojno učenje v interaktivno učno okolje.\n" +
+          "Revelo je razvil infrastrukturo, ki povezuje spletne izobraževalne vsebine z delujočimi delotoki v Orangeu, tako da lahko učenci in učitelji s podatki in metodami strojnega učenja eksperimentirajo neposredno v brskalniku.\n",
+        title: "DALI4US",
+        subtitle: "Interaktivno izobraževanje iz podatkovne znanosti",
+        featureLabels: [
+          {
+            text: "Interaktivno učenje",
+            x: 58,
+            y: 24,
+          },
+          {
+            text: "Delotoki v Orangeu",
+            x: 22,
+            y: 60,
+          },
+        ],
       },
     ],
   },
