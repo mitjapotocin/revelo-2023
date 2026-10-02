@@ -156,7 +156,7 @@ const translations = {
     title: "Osvetlimo vaše podatke.",
     cta: {
       title: "Kontaktirajte nas",
-      url: "contact-us",
+      url: "#contact",
     },
 
     featureLabels: [

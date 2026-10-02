@@ -90,9 +90,7 @@ export default function SelectedWork({
   dictionary: ITranslations;
 }) {
   const { advantages: selectedWork } = dictionary;
-  const [projectsInView, setProjectsInView] = React.useState<number[]>(
-    []
-  );
+  const [projectsInView, setProjectsInView] = React.useState<number[]>([]);
   const lowestProjectInView = React.useMemo(() => {
     return [...projectsInView].sort()[0];
   }, [projectsInView]);

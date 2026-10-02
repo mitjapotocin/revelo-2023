@@ -156,7 +156,7 @@ const translations = {
     title: "We shed light on your data.",
     cta: {
       title: "Contact us",
-      url: "contact-us",
+      url: "#contact",
     },
 
     featureLabels: [
