@@ -121,24 +121,24 @@ const translations = {
 
   homeCover: {
     aside:
-      "Revelo is a data science company. We collaborate with our clients in transition to a data-driven organization. We help you use the data to improve the quality of your products, optimize your processes and reduce costs. Data-driven companies gain a competitive advantage and advance faster.",
+      "Revelo je podjetje za podatkovno znanost in razvoj programske opreme ter odcepljeno podjetje Univerze v Ljubljani. Združujemo podatkovno znanost, strojno učenje in programsko inženirstvo, da kompleksne podatke, metodologije in raziskave pretvorimo v praktična digitalna orodja. Delamo vse od zgodnjih prototipov do celovitih aplikacij in podatkovne infrastrukture.",
     brand: "Revelo.",
     subtitle:
-      "Explainable AI. Fast prototyping with Orange Data Mining Software. Customer training.",
-    title: "We shed light on your data.",
+      "Kompleksne podatke, metode in raziskave pretvarjamo v programsko opremo, ki jo ljudje lahko uporabljajo.",
+    title: "Osvetlimo vaše podatke.",
     cta: {
-      title: "Contact us",
+      title: "Kontaktirajte nas",
       url: "contact-us",
     },
 
     featureLabels: [
       {
-        title: "Consulting",
+        title: "Podatkovna znanost",
         x: 30,
         y: 29,
       },
       {
-        title: "Integrated solutions",
+        title: "Programske rešitve",
         x: 40,
         y: 78,
       },

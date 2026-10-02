@@ -121,10 +121,10 @@ const translations = {
 
   homeCover: {
     aside:
-      "Revelo is a data science company. We collaborate with our clients in transition to a data-driven organization. We help you use the data to improve the quality of your products, optimize your processes and reduce costs. Data-driven companies gain a competitive advantage and advance faster.",
+      "Revelo is a data science and software development company and a spin-off of the University of Ljubljana. We combine data science, machine learning and software engineering to turn complex data, methodologies and research into practical digital tools. We work from early prototypes to complete applications and data infrastructure.",
     brand: "Revelo.",
     subtitle:
-      "Explainable AI. Fast prototyping with Orange Data Mining Software. Customer training.",
+      "We turn complex data, methods and research into software that people can use.",
     title: "We shed light on your data.",
     cta: {
       title: "Contact us",
@@ -133,12 +133,12 @@ const translations = {
 
     featureLabels: [
       {
-        title: "Consulting",
+        title: "Data science",
         x: 30,
         y: 29,
       },
       {
-        title: "Integrated solutions",
+        title: "Software solutions",
         x: 40,
         y: 78,
       },
