@@ -38,29 +38,29 @@ const SideImage = ({ index }: { index: number }) => {
   );
 };
 
-const Advantage = ({
-  advantage,
+const Project = ({
+  project,
   index,
-  setAdvantagesInView,
+  setProjectsInView,
 }: {
-  advantage: ITranslations["advantages"]["advantages"][number];
+  project: ITranslations["advantages"]["advantages"][number];
   index: number;
-  setAdvantagesInView: React.Dispatch<React.SetStateAction<number[]>>;
+  setProjectsInView: React.Dispatch<React.SetStateAction<number[]>>;
 }) => {
   const { ref, inView } = useInView({ threshold: 0.35 });
 
   React.useEffect(() => {
-    setAdvantagesInView((v) =>
+    setProjectsInView((v) =>
       inView ? [...v, index] : v.filter((i) => i !== index)
     );
-  }, [inView, index, setAdvantagesInView]);
+  }, [inView, index, setProjectsInView]);
 
   return (
-    <div ref={ref} id={slugify(advantage.title)} className="tabbed-list-item">
+    <div ref={ref} id={slugify(project.title)} className="tabbed-list-item">
       <div className="left">
-        <h3>{advantage.title}</h3>
-        <div className="tabbed-list-item-subtitle">{advantage.subtitle}</div>
-        <p>{advantage.content}</p>
+        <h3>{project.title}</h3>
+        <div className="tabbed-list-item-subtitle">{project.subtitle}</div>
+        <p>{project.content}</p>
       </div>
       <div className="right">
         <div className="tabbed-list-image-wrapper">
@@ -76,7 +76,7 @@ const Advantage = ({
 
           <SideImage index={index} />
         </div>
-        {advantage.featureLabels.map((l) => (
+        {project.featureLabels.map((l) => (
           <FeatureLabel key={l.text} text={l.text} x={l.x} y={l.y} />
         ))}
       </div>
@@ -84,32 +84,32 @@ const Advantage = ({
   );
 };
 
-export default function Advantages({
+export default function SelectedWork({
   dictionary,
 }: {
   dictionary: ITranslations;
 }) {
-  const { advantages } = dictionary;
-  const [advantagesInView, setAdvantagesInView] = React.useState<number[]>(
+  const { advantages: selectedWork } = dictionary;
+  const [projectsInView, setProjectsInView] = React.useState<number[]>(
     []
   );
-  const lowestAdvantageInView = React.useMemo(() => {
-    return [...advantagesInView].sort()[0];
-  }, [advantagesInView]);
+  const lowestProjectInView = React.useMemo(() => {
+    return [...projectsInView].sort()[0];
+  }, [projectsInView]);
 
   return (
     <section className="section section-advantages tabbed-list">
       <div className="container">
-        <h2>{advantages.title}</h2>
+        <h2>{selectedWork.title}</h2>
       </div>
 
       <div className="tabbed-list-nav sticky">
         <div className="container">
           <div className="tabbed-list-nav-inner-wrapper">
-            {advantages.advantages.map((a, index) => (
+            {selectedWork.advantages.map((a, index) => (
               <a
                 key={a.title}
-                className={lowestAdvantageInView === index ? "active" : ""}
+                className={lowestProjectInView === index ? "active" : ""}
                 href={`#${slugify(a.title)}`}
               >
                 {a.title}
@@ -121,12 +121,12 @@ export default function Advantages({
 
       <div className="container">
         <div>
-          {advantages.advantages.map((a, index) => (
-            <Advantage
+          {selectedWork.advantages.map((a, index) => (
+            <Project
               key={a.title}
-              advantage={a}
+              project={a}
               index={index}
-              setAdvantagesInView={setAdvantagesInView}
+              setProjectsInView={setProjectsInView}
             />
           ))}
         </div>
