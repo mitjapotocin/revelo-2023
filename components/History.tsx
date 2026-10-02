@@ -21,9 +21,11 @@ export default function History({ dictionary }: { dictionary: ITranslations }) {
           </div>
           <div className="history-cover-img">
             <Image className="services-image" {...HistoryCover} alt="" />
-            {history.featureLabels.map((l) => (
-              <FeatureLabel key={l.title} text={l.title} x={l.x} y={l.y} />
-            ))}
+            {history.featureLabels.map(
+              (l: { title: string; x: number; y: number }) => (
+                <FeatureLabel key={l.title} text={l.title} x={l.x} y={l.y} />
+              )
+            )}
           </div>
         </div>
       </div>

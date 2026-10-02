@@ -109,9 +109,11 @@ export default function Cover({
             ))}
         </div>
 
-        <aside className="cover-aside">
-          <p>{dictionaryForCover.aside}</p>
-        </aside>
+        {dictionaryForCover.aside && (
+          <aside className="cover-aside">
+            <p>{dictionaryForCover.aside}</p>
+          </aside>
+        )}
       </div>
     </section>
   );

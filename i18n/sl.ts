@@ -209,29 +209,22 @@ const translations = {
 
   // About page
   aboutCover: {
-    title: "About us",
+    title: "O nas",
     subtitle:
-      "We are a group of data scientists and engineers specializing in the fast delivery of machine learning solutions to innovative customers.",
-    aside:
-      "We established Revelo as a spin-off of the University of Ljubljana, where we collaborate with a group that develops Orange, one of the most innovative software tools for large-scale data science and visual analytics. We offer a wide range of services in the field of data engineering and implementation of machine learning, develop turnkey solutions and provide training workshops. We cooperate with pharmaceutical companies, automotive technology providers, retailers, banks, and businesses where data is the key to innovation and growth.",
+      "Smo ekipa podatkovnih znanstvenikov in inženirjev, specializiranih za razvoj praktičnih rešitev za zahtevne izzive na področju podatkov in programske opreme.",
     image: "/images/about-hero.webp",
   },
 
   history: {
-    title: "Our History",
+    title: "Naša zgodba",
     subtitle: [
-      "Revelo is a University of Ljubljana spin-off company. We founded Revelo to help users of Orange prepare the data, customize Orange, and train employees in data science.",
-      "Our first clients were from the pharma industry, retail, and banking. They all had a bunch of data, a budget, and an open mind toward new data analysis technologies. We maintain this diverse customer profile to this day.",
-      "The most recent requests we are fulfilling are related to explainability and responsible AI. With a motivated and innovative team and deep knowledge of explainable machine learning, user interfaces, and storytelling, we help clients transition to a data-driven organization.",
+      "Revelo smo ustanovili leta 2015 kot odcepljeno podjetje Univerze v Ljubljani, z močnimi koreninami v razvoju orodja Orange Data Mining.",
+      "Začeli smo s pomočjo organizacijam pri pripravi in analizi podatkov ter z razvojem rešitev po meri na osnovi Orangea. Sčasoma so projekti postajali širši in zahtevnejši ter so združevali podatkovno znanost, razvoj programske opreme, znanstveno znanje, infrastrukturo in hitro prototipiranje.",
+      "Z rastjo podjetja nam je postajalo vse bolj jasno tudi, kako želimo delati. Pomembni so nam kakovost našega dela, ljudje, s katerimi sodelujemo, in ljudje v naši ekipi. Cenimo zaupanje, samostojnost, sodelovanje in odprto komunikacijo ter verjamemo, da mora tudi zahtevno delo pustiti prostor za življenje zunaj službe.",
+      "Danes Revelo sodeluje z raziskovalnimi ustanovami, industrijo in javnim sektorjem pri zahtevnih projektih, kjer se morajo povezati podatki, programska oprema in domensko znanje – in si ob tem prizadeva ostati podjetje, v kakršnem bi tudi sami želeli delati.",
     ],
 
-    featureLabels: [
-      {
-        title: "Founded in 2015",
-        x: 30,
-        y: 20,
-      },
-    ],
+    featureLabels: [],
   },
 };
 

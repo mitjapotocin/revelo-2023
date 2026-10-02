@@ -212,27 +212,20 @@ const translations = {
   aboutCover: {
     title: "About us",
     subtitle:
-      "We are a group of data scientists and engineers specializing in the fast delivery of machine learning solutions to innovative customers.",
-    aside:
-      "We established Revelo as a spin-off of the University of Ljubljana, where we collaborate with a group that develops Orange, one of the most innovative software tools for large-scale data science and visual analytics. We offer a wide range of services in the field of data engineering and implementation of machine learning, develop turnkey solutions and provide training workshops. We cooperate with pharmaceutical companies, automotive technology providers, retailers, banks, and businesses where data is the key to innovation and growth.",
+      "We are a team of data scientists and engineers specialising in building practical solutions for complex data and software challenges.",
     image: "/images/about-hero.webp",
   },
 
   history: {
-    title: "Our History",
+    title: "Our story",
     subtitle: [
-      "Revelo is a University of Ljubljana spin-off company. We founded Revelo to help users of Orange prepare the data, customize Orange, and train employees in data science.",
-      "Our first clients were from the pharma industry, retail, and banking. They all had a bunch of data, a budget, and an open mind toward new data analysis technologies. We maintain this diverse customer profile to this day.",
-      "The most recent requests we are fulfilling are related to explainability and responsible AI. With a motivated and innovative team and deep knowledge of explainable machine learning, user interfaces, and storytelling, we help clients transition to a data-driven organization.",
+      "Revelo was founded in 2015 as a spin-off of the University of Ljubljana, with strong roots in the development of Orange Data Mining.",
+      "We started by helping organisations prepare and analyse their data and by developing custom solutions around Orange. Over time, the projects became broader and more demanding, bringing together data science, software development, scientific knowledge, infrastructure and rapid prototyping.",
+      "As the company grew, we also became increasingly clear about how we wanted to work. We care about the quality of our work, about the people we work with, and about the people in our own team. We value trust, independence, collaboration and open communication, and we believe that demanding work should still leave space for life outside work.",
+      "Today, Revelo works across research, industry and the public sector on complex projects where data, software and domain expertise need to come together — while trying to remain the kind of company we ourselves want to work in.",
     ],
 
-    featureLabels: [
-      {
-        title: "Founded in 2015",
-        x: 30,
-        y: 20,
-      },
-    ],
+    featureLabels: [],
   },
 };
 
