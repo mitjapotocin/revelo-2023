@@ -216,14 +216,15 @@ const translations = {
   },
 
   form: {
-    title: "Stopite v stik z nami",
-    content: "Izpolnite obrazec ali nam pišite na ",
+    title: "Imate problem, ki ga je vredno rešiti?",
+    content:
+      "Če delate s kompleksnimi podatki, raziskavami ali metodologijo in menite, da bi iz tega lahko nastalo boljše orodje, bi radi slišali več o tem.",
     firstname: "Ime",
     lastname: "Priimek",
     email: "E-pošta",
-    msg: "Sporočilo",
+    msg: "Na čem delate?",
     msg_placeholder: "Vpišite svoje sporočilo ...",
-    button: "Kontaktirajte nas",
+    button: "Pošlji sporočilo",
     error: "Prišlo je do napake. Poskusite znova ali nam pišite neposredno.",
     success:
       "Hvala, ker ste nas kontaktirali. Odgovorili vam bomo v najkrajšem možnem času.",

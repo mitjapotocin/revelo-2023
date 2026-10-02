@@ -216,14 +216,15 @@ const translations = {
   },
 
   form: {
-    title: "Get in touch with us",
-    content: "Fill out the form or contact us at ",
+    title: "Have a problem worth solving?",
+    content:
+      "If you're working with complex data, research or methodology and think it could become a better tool, we'd like to hear about it.",
     firstname: "First name",
     lastname: "Last name",
     email: "E-mail",
-    msg: "Message",
+    msg: "What are you working on?",
     msg_placeholder: "Enter your message...",
-    button: "Contact us",
+    button: "Send message",
     error: "Something went wrong. Please try again or email us directly.",
     success:
       "Thank you for contacting us. We will get back to you as soon as possible.",

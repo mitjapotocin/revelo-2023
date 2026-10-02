@@ -31,7 +31,6 @@ export default function Form({ dictionary }: { dictionary: ITranslations }) {
 
             <div className="subtitle">
               {form.content}
-              <a href="mailto:info@revelo.bi">info@revelo.bi</a>
             </div>
 
             {/* For emailjs */}
