@@ -16,10 +16,10 @@ const translations = {
   },
 
   navigation: {
-    cta: "Stopite v stik z nami",
+    cta: "Kontaktirajte nas",
     aboutUs: "O nas",
     home: "Domov",
-    logo: "Revelo logotip",
+    logo: "Logotip Revelo",
   },
 
   services: {
@@ -29,7 +29,7 @@ const translations = {
     services: [
       {
         content:
-          "Razvijamo analitične rešitve in rešitve na osnovi umetne inteligence za kompleksne podatke in resnične probleme. Osredotočamo se na izbiro pravih metod za posamezen problem – od statističnega modeliranja in strojnega učenja do sodobne umetne inteligence – ter jih pretvorimo v robustne, pregledne in uporabne rešitve.",
+          "Razvijamo analitične rešitve in rešitve na osnovi umetne inteligence za kompleksne podatke in probleme iz prakse. Osredotočamo se na izbiro pravih metod za posamezen problem – od statističnega modeliranja in strojnega učenja do sodobne umetne inteligence – ter jih pretvorimo v robustne, pregledne in uporabne rešitve.",
         title: "Uporabna umetna inteligenca in podatkovna znanost",
       },
       {
@@ -39,7 +39,7 @@ const translations = {
       },
       {
         content:
-          "Razvijamo aplikacije in infrastrukturo za podatke, analitiko in znanstvene metode – od specializiranih analitičnih orodij do celovitih spletnih aplikacij in podatkovnih platform. Rešitve peljemo dlje od modela ali prototipa in jih naredimo uporabne v praksi.",
+          "Razvijamo aplikacije in infrastrukturo za podatke, analitiko in znanstvene metode – od specializiranih analitičnih orodij do celovitih spletnih aplikacij in podatkovnih platform. Pri modelu ali prototipu se ne ustavimo – rešitve pripeljemo do uporabe v praksi.",
         title: "Podatkovno podprta programska oprema in infrastruktura",
       },
       {
@@ -55,11 +55,11 @@ const translations = {
     advantages: [
       {
         content: [
-          "PAY DAY zahteve evropske direktive o transparentnosti plačil pretvarja v praktično analitično orodje za delodajalce v Sloveniji. Obdeluje podatke o plačah, izračunava kazalnike plačne vrzeli med spoloma ter organizacijam pomaga prepoznati, kje se pojavljajo razlike v plačah in kje bi bila potrebna nadaljnja analiza.",
+          "PAY DAY zahteve evropske direktive o preglednosti plačil pretvarja v praktično analitično orodje za delodajalce v Sloveniji. Obdeluje podatke o plačah, izračunava kazalnike plačne vrzeli med spoloma ter organizacijam pomaga prepoznati, kje se pojavljajo razlike v plačah in kje bi bila potrebna nadaljnja analiza.",
           "Orodje je nastalo v okviru projekta PAY DAY, ki ga financira EU, in ponuja tudi brezplačno metodologijo vrednotenja delovnih mest, s katero lahko organizacije kjer koli vrednotijo delovna mesta in oblikujejo kategorije delovnih mest.",
         ],
         title: "PAY DAY",
-        subtitle: "Transparentnost plač v praksi",
+        subtitle: "Preglednost plačil v praksi",
         links: [
           {
             text: "Obiščite projekt PAY DAY →",
@@ -72,7 +72,7 @@ const translations = {
         ],
         featureLabels: [
           {
-            text: "Transparentnost plač",
+            text: "Preglednost plačil",
             x: 20,
             y: 70,
           },
@@ -85,7 +85,7 @@ const translations = {
       },
       {
         content: [
-          "S strokovnjaki za vrednotenje delovnih mest in plačne strukture razvijamo Paygap.report, novo rešitev za spolno nevtralno vrednotenje delovnih mest in transparentnost plačil.",
+          "S strokovnjaki za vrednotenje delovnih mest in plačne strukture razvijamo Paygap.report, novo rešitev za spolno nevtralno vrednotenje delovnih mest in preglednost plačil.",
           "Paygap.report organizacijam pomaga vrednotiti delovna mesta, oblikovati kategorije delovnih mest ter analizirati podatke o zaposlenih in plačah v strukturiranem delovnem procesu – vrednotenje delovnih mest in analizo plačnih vrzeli povezuje v enoten, praktičen postopek.",
         ],
         title: "Paygap.report",
@@ -146,7 +146,7 @@ const translations = {
       {
         content: [
           "DALI4US prinaša podatkovno znanost in strojno učenje v interaktivno učno okolje.",
-          "Revelo je razvil infrastrukturo, ki povezuje spletne izobraževalne vsebine z delujočimi delotoki v Orangeu, tako da lahko učenci in učitelji s podatki in metodami strojnega učenja eksperimentirajo neposredno v brskalniku.",
+          "Revelo je razvil infrastrukturo, ki povezuje spletne izobraževalne vsebine z interaktivnimi delotoki Orange, tako da lahko učenci in učitelji s podatki in metodami strojnega učenja eksperimentirajo neposredno v brskalniku.",
         ],
         title: "DALI4US",
         subtitle: "Interaktivno izobraževanje iz podatkovne znanosti",
@@ -209,7 +209,7 @@ const translations = {
         subheading: "Orange Lab",
         content:
           "Razvijamo Orange Lab, spletno okolje za vizualno analitiko podatkov, ki delotoke Orange prenaša v brskalnik. Podpira sodelovalno delo in omogoča vključevanje interaktivnih delov analitičnih delotokov neposredno v spletne strani in aplikacije.",
-        link: "Več o Orange Lab →",
+        link: "Več o okolju Orange Lab →",
         url: "https://arxiv.org/abs/2606.09239",
       },
     ],
@@ -231,7 +231,7 @@ const translations = {
   },
 
   footer: {
-    rights: "Revelo. All rights reserved.",
+    rights: "Revelo. Vse pravice pridržane.",
   },
 
   // About page
