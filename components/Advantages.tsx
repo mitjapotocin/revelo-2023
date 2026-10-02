@@ -56,6 +56,7 @@ const Advantage = ({
     <div ref={ref} id={slugify(advantage.title)} className="tabbed-list-item">
       <div className="left">
         <h3>{advantage.title}</h3>
+        <div className="tabbed-list-item-subtitle">{advantage.subtitle}</div>
         <p>{advantage.content}</p>
       </div>
       <div className="right">

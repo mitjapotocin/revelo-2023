@@ -52,7 +52,14 @@
     }
 
     h3 {
+      margin-bottom: 8px;
+    }
+
+    .tabbed-list-item-subtitle {
       margin-bottom: 24px;
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--brand-color);
     }
 
     p {
