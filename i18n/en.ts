@@ -79,13 +79,13 @@ const translations = {
         featureLabels: [
           {
             text: "Job evaluation",
-            x: 58,
-            y: 28,
+            x: 50,
+            y: 48,
           },
           {
             text: "Pay gap analytics",
-            x: 22,
-            y: 60,
+            x: 12,
+            y: 20,
           },
         ],
       },
@@ -97,13 +97,13 @@ const translations = {
         featureLabels: [
           {
             text: "Data integration",
-            x: 58,
+            x: 28,
             y: 24,
           },
           {
             text: "Semantic search",
-            x: 22,
-            y: 60,
+            x: 42,
+            y: 70,
           },
         ],
       },
@@ -115,7 +115,7 @@ const translations = {
         featureLabels: [
           {
             text: "R&D analytics",
-            x: 58,
+            x: 8,
             y: 24,
           },
           {
@@ -134,7 +134,7 @@ const translations = {
         featureLabels: [
           {
             text: "Interactive learning",
-            x: 58,
+            x: 50,
             y: 24,
           },
           {

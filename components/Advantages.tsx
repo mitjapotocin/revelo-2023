@@ -63,17 +63,19 @@ const Advantage = ({
         <p>{advantage.content}</p>
       </div>
       <div className="right">
-        {index === 0 && (
-          <Image
-            className="tabbed-list-extra-image"
-            src={BlobImage.src}
-            width={702}
-            height={621}
-            alt=""
-          />
-        )}
+        <div className="tabbed-list-image-wrapper">
+          {index === 0 && (
+            <Image
+              className="tabbed-list-extra-image"
+              src={BlobImage.src}
+              width={702}
+              height={621}
+              alt=""
+            />
+          )}
 
-        <SideImage index={index} />
+          <SideImage index={index} />
+        </div>
         {advantage.featureLabels.map((l) => (
           <FeatureLabel key={l.text} text={l.text} x={l.x} y={l.y} />
         ))}

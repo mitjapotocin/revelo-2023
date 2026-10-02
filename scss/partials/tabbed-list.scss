@@ -63,8 +63,8 @@
     .tabbed-list-item-subtitle {
       margin-bottom: 24px;
       font-size: 18px;
-      font-weight: 500;
-      color: var(--brand-color);
+      font-weight: 600;
+      color: #363f72;
     }
 
     p {
@@ -73,6 +73,7 @@
 
     .left {
       width: 384px;
+      flex-shrink: 0;
 
       @include respond-to(768) {
         width: auto;
@@ -82,7 +83,8 @@
     .right {
       margin-left: 135px;
       position: relative;
-      width: 100%;
+      flex: 1;
+      min-width: 0;
 
       @include respond-to(1024) {
         margin-left: 20px;
@@ -100,11 +102,16 @@
     }
   }
 
+  .tabbed-list-image-wrapper {
+    position: relative;
+    max-width: 590px;
+  }
+
   .tabbed-list-extra-image {
     position: absolute;
     top: 8%;
     left: 38%;
-    max-width: 590px;
+    width: 100%;
     height: auto;
 
     @include respond-to(768) {
