@@ -13,6 +13,10 @@ export default function Orange({ dictionary }: { dictionary: ITranslations }) {
 
         <h2>{orange.title}</h2>
 
+        {orange.subheading && (
+          <div className="orange-subheading">{orange.subheading}</div>
+        )}
+
         <div className="subtitle">{orange.subtitle}</div>
 
         <a

@@ -175,8 +175,9 @@ const translations = {
 
   orange: {
     title: "Orange data mining",
+    subheading: "Visual programming for data science",
     subtitle:
-      "We partner with the team that develops Orange, one of the most comprehensive, Python-based data mining frameworks. Orange combines visual programming, interactive visualizations, and machine learning in a unique platform for visual analytics. Revelo uses Orange for prototyping, training, and, where appropriate, for solution delivery in the form of add-ons or customized Orange enhancements.",
+      "We have been working closely with the team behind Orange Data Mining for many years. Orange combines visual programming, interactive data exploration and machine learning in an environment that allows ideas to be tested and analytical workflows to be developed quickly. We use Orange for prototyping, education and specialised analytical solutions, and develop custom components and applications where needed.",
   },
 
   form: {
