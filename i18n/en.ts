@@ -60,6 +60,16 @@ const translations = {
         ],
         title: "PAY DAY",
         subtitle: "Pay transparency in practice",
+        links: [
+          {
+            text: "Visit the PAY DAY project →",
+            url: "https://payday.enakostspolov.si/",
+          },
+          {
+            text: "Explore the PAY DAY tool →",
+            url: "https://payday-app-fo00.onrender.com/",
+          },
+        ],
         featureLabels: [
           {
             text: "Pay transparency",
@@ -140,6 +150,12 @@ const translations = {
         ],
         title: "DALI4US",
         subtitle: "Interactive data science education",
+        links: [
+          {
+            text: "Visit the DALI4US project →",
+            url: "https://www.dali4us.eu/",
+          },
+        ],
         featureLabels: [
           {
             text: "Interactive learning",

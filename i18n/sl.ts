@@ -60,6 +60,16 @@ const translations = {
         ],
         title: "PAY DAY",
         subtitle: "Transparentnost plač v praksi",
+        links: [
+          {
+            text: "Obiščite projekt PAY DAY →",
+            url: "https://payday.enakostspolov.si/",
+          },
+          {
+            text: "Preizkusite orodje PAY DAY →",
+            url: "https://payday-app-fo00.onrender.com/",
+          },
+        ],
         featureLabels: [
           {
             text: "Transparentnost plač",
@@ -140,6 +150,12 @@ const translations = {
         ],
         title: "DALI4US",
         subtitle: "Interaktivno izobraževanje iz podatkovne znanosti",
+        links: [
+          {
+            text: "Obiščite projekt DALI4US →",
+            url: "https://www.dali4us.eu/",
+          },
+        ],
         featureLabels: [
           {
             text: "Interaktivno učenje",

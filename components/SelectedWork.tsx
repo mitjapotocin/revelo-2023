@@ -63,6 +63,21 @@ const Project = ({
         {project.content.map((c) => (
           <p key={c}>{c}</p>
         ))}
+
+        {project.links && (
+          <div className="tabbed-list-item-links">
+            {project.links.map((l) => (
+              <a
+                key={l.url}
+                href={l.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {l.text}
+              </a>
+            ))}
+          </div>
+        )}
       </div>
       <div className="right">
         <div className="tabbed-list-image-wrapper">

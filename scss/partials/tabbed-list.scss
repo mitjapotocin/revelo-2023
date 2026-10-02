@@ -75,6 +75,23 @@
       }
     }
 
+    .tabbed-list-item-links {
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      a {
+        color: var(--brand-color);
+        font-weight: 500;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
     .left {
       width: 384px;
       flex-shrink: 0;
