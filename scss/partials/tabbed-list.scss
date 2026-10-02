@@ -69,6 +69,10 @@
 
     p {
       max-width: 384px;
+
+      & + p {
+        margin-top: 16px;
+      }
     }
 
     .left {

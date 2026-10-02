@@ -54,8 +54,10 @@ const translations = {
     title: "Izbrani projekti",
     advantages: [
       {
-        content:
-          "Naše rešitve uporabljajo inteligentne vizualizacije, nomograme, karakterizacije skupin in odločitvena pravila. Osredotočamo se na razložljivo umetno inteligenco, saj razumevanje, kaj modeli počnejo, pomaga strankam pri sprejemanju, razumevanju poslovanja in optimizaciji. Naša rešitev je skladna z obstoječimi pravnimi zahtevami, vključno z zakonom EU o umetni inteligenci. Zmanjšujemo pristranskost, zmanjšujemo tržno tveganje in omogočamo odločanje z razložljivim napovednim modeliranjem.",
+        content: [
+          "PAY DAY zahteve evropske direktive o transparentnosti plačil pretvarja v praktično analitično orodje za delodajalce v Sloveniji. Obdeluje podatke o plačah, izračunava kazalnike plačne vrzeli med spoloma ter organizacijam pomaga prepoznati, kje se pojavljajo razlike v plačah in kje bi bila potrebna nadaljnja analiza.",
+          "Orodje je nastalo v okviru projekta PAY DAY, ki ga financira EU, in ponuja tudi brezplačno metodologijo vrednotenja delovnih mest, s katero lahko organizacije kjer koli vrednotijo delovna mesta in oblikujejo kategorije delovnih mest.",
+        ],
         title: "PAY DAY",
         subtitle: "Transparentnost plač v praksi",
         featureLabels: [
@@ -72,8 +74,10 @@ const translations = {
         ],
       },
       {
-        content:
-          "Prototipe naših sistemov oblikujemo v paketu Orange Data Mining, da zmanjšamo čas do trga, zmanjšamo stroške in omogočimo zgodnje vključevanje strank v cikel testiranja in učenja. Naše prototipiranje je hitro: delamo z orodji, ki jih imamo, in odprtokodnimi orodji, kot je Orange, ki smo ga pomagali razviti.",
+        content: [
+          "S strokovnjaki za vrednotenje delovnih mest in plačne strukture razvijamo Paygap.report, novo rešitev za spolno nevtralno vrednotenje delovnih mest in transparentnost plačil.",
+          "Paygap.report organizacijam pomaga vrednotiti delovna mesta, oblikovati kategorije delovnih mest ter analizirati podatke o zaposlenih in plačah v strukturiranem delovnem procesu – vrednotenje delovnih mest in analizo plačnih vrzeli povezuje v enoten, praktičen postopek.",
+        ],
         title: "Paygap.report",
         subtitle: "Od vrednotenja delovnih mest do analize plačnih vrzeli",
         featureLabels: [
@@ -90,8 +94,10 @@ const translations = {
         ],
       },
       {
-        content:
-          "Izstopamo pri izobraževanju strank. Uporabljamo edinstven pristop na terenu, razvit na Univerzi v Ljubljani, ki so ga pohvalili institucije in podjetja po vsem svetu. Hitri in zabavni vadbeni programi ter raziskovalne delavnice, ki jih oblikujemo, privlačijo menedžerje in končne uporabnike.",
+        content: [
+          "Razvijamo podatkovno infrastrukturo, ki združuje informacije iz različnih virov ter omogoča njihovo iskanje, raziskovanje in uporabo.",
+          "Naše delo vključuje obsežno integracijo podatkov, raziskovalne podatkovne zbirke, semantično iskanje in analitične vmesnike za odkrivanje povezav v kompleksnih znanstvenih in raziskovalnih informacijah.",
+        ],
         title: "Raziskovalna infrastruktura",
         subtitle: "Povezovanje raziskovalnih podatkov",
         featureLabels: [
@@ -108,8 +114,10 @@ const translations = {
         ],
       },
       {
-        content:
-          "Sodelujemo z znanstvenimi in industrijskimi razvojnimi skupinami pri problemih, kjer se srečajo eksperimentalni podatki, domensko znanje in napredna analitika. Naše delo vključuje strojno učenje, analizo slik in eksperimentalnih podatkov, napovedno modeliranje in vizualno analitiko ter specializirano programsko opremo za znanstvene delovne procese.",
+        content: [
+          "Sodelujemo z znanstvenimi in industrijskimi razvojnimi skupinami pri problemih, kjer se srečajo eksperimentalni podatki, domensko znanje in napredna analitika.",
+          "Naše delo vključuje strojno učenje, analizo slik in eksperimentalnih podatkov, napovedno modeliranje in vizualno analitiko ter specializirano programsko opremo za znanstvene delovne procese.",
+        ],
         title: "Znanstvena analitika",
         subtitle: "Podatkovna znanost za raziskave in razvoj",
         featureLabels: [
@@ -126,9 +134,10 @@ const translations = {
         ],
       },
       {
-        content:
-          "DALI4US prinaša podatkovno znanost in strojno učenje v interaktivno učno okolje.\n" +
-          "Revelo je razvil infrastrukturo, ki povezuje spletne izobraževalne vsebine z delujočimi delotoki v Orangeu, tako da lahko učenci in učitelji s podatki in metodami strojnega učenja eksperimentirajo neposredno v brskalniku.\n",
+        content: [
+          "DALI4US prinaša podatkovno znanost in strojno učenje v interaktivno učno okolje.",
+          "Revelo je razvil infrastrukturo, ki povezuje spletne izobraževalne vsebine z delujočimi delotoki v Orangeu, tako da lahko učenci in učitelji s podatki in metodami strojnega učenja eksperimentirajo neposredno v brskalniku.",
+        ],
         title: "DALI4US",
         subtitle: "Interaktivno izobraževanje iz podatkovne znanosti",
         featureLabels: [
@@ -175,32 +184,33 @@ const translations = {
 
   orange: {
     title: "Orange data mining",
-    subheading: "Foo",
+    subheading: "Vizualno programiranje za podatkovno znanost",
     subtitle:
-      "We partner with the team that develops Orange, one of the most comprehensive, Python-based data mining frameworks. Orange combines visual programming, interactive visualizations, and machine learning in a unique platform for visual analytics. Revelo uses Orange for prototyping, training, and, where appropriate, for solution delivery in the form of add-ons or customized Orange enhancements.",
+      "Z ekipo, ki razvija Orange Data Mining, že vrsto let tesno sodelujemo. Orange združuje vizualno programiranje, interaktivno raziskovanje podatkov in strojno učenje v okolju, ki omogoča hitro preizkušanje idej in razvoj analitičnih delotokov. Orange uporabljamo za prototipiranje, izobraževanje in specializirane analitične rešitve, po potrebi pa razvijamo tudi komponente in aplikacije po meri.",
     link: "Več o orodju Orange data mining →",
     sections: [
       {
-        subheading: "Foo",
-        content: "Foo",
-        link: "Foo →",
-        url: "#",
+        subheading: "Orange Lab",
+        content:
+          "Razvijamo Orange Lab, spletno okolje za vizualno analitiko podatkov, ki delotoke Orange prenaša v brskalnik. Podpira sodelovalno delo in omogoča vključevanje interaktivnih delov analitičnih delotokov neposredno v spletne strani in aplikacije.",
+        link: "Več o Orange Lab →",
+        url: "https://arxiv.org/abs/2606.09239",
       },
     ],
   },
 
   form: {
-    title: "Get in touch with us",
-    content: "Fill out the form or contact us at ",
-    firstname: "First name",
-    lastname: "Last name",
-    email: "E-mail",
-    msg: "Message",
-    msg_placeholder: "Enter your message...",
-    button: "Contact us",
-    error: "Something went wrong. Please try again or email us directly.",
+    title: "Stopite v stik z nami",
+    content: "Izpolnite obrazec ali nam pišite na ",
+    firstname: "Ime",
+    lastname: "Priimek",
+    email: "E-pošta",
+    msg: "Sporočilo",
+    msg_placeholder: "Vpišite svoje sporočilo ...",
+    button: "Kontaktirajte nas",
+    error: "Prišlo je do napake. Poskusite znova ali nam pišite neposredno.",
     success:
-      "Thank you for contacting us. We will get back to you as soon as possible.",
+      "Hvala, ker ste nas kontaktirali. Odgovorili vam bomo v najkrajšem možnem času.",
   },
 
   footer: {

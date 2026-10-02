@@ -60,7 +60,9 @@ const Project = ({
       <div className="left">
         <h3>{project.title}</h3>
         <div className="tabbed-list-item-subtitle">{project.subtitle}</div>
-        <p>{project.content}</p>
+        {project.content.map((c) => (
+          <p key={c}>{c}</p>
+        ))}
       </div>
       <div className="right">
         <div className="tabbed-list-image-wrapper">

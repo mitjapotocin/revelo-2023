@@ -54,8 +54,10 @@ const translations = {
     title: "Selected work",
     advantages: [
       {
-        content:
-          "Our solutions use intelligent visualizations, nomograms, cluster characterizations, and decision rules. We focus on explainable AI because understanding what models do helps customers adopt, understand business, and optimize. Our solution complies with current legal requirements, including the EU AI Act. We mitigate bias, reduce market risk, and enable decision-making with explainable predictive modeling.",
+        content: [
+          "PAY DAY turns the requirements of the EU Pay Transparency Directive into a practical analytical tool for employers in Slovenia. It processes payroll data, calculates gender pay gap indicators and helps organisations identify where pay differences occur and where further analysis may be needed.",
+          "Developed as part of the EU-funded PAY DAY project, it also provides a free job evaluation methodology that organisations anywhere can use to evaluate jobs and establish job categories.",
+        ],
         title: "PAY DAY",
         subtitle: "Pay transparency in practice",
         featureLabels: [
@@ -72,8 +74,10 @@ const translations = {
         ],
       },
       {
-        content:
-          "We prototype our systems in the Orange Data Mining suite to reduce time to market, minimize costs, and enable early engagement of the customers in the test and learn cycle. Our prototyping is swift: we work with the tools we own and open-source tools like Orange that we have helped develop.",
+        content: [
+          "We are partnering with experts in job evaluation and pay structures to develop Paygap.report, a new solution for gender-neutral job evaluation and pay transparency.",
+          "Paygap.report is designed to help organisations evaluate jobs, establish job categories and analyse employee and pay data in a structured workflow — connecting job evaluation with pay gap analysis in one practical process.",
+        ],
         title: "Paygap.report",
         subtitle: "From job evaluation to pay gap analysis",
         featureLabels: [
@@ -90,8 +94,10 @@ const translations = {
         ],
       },
       {
-        content:
-          "We excel in customer training. We use a unique, hands-on approach developed at the University of Ljubljana that institutions and companies worldwide have praised. The hands-on tutorials and exploratory workshops we design are quick and enjoyable and appeal to managers and end-users.",
+        content: [
+          "We develop data infrastructure that brings together information from multiple sources and makes it searchable, explorable and useful.",
+          "Our work includes large-scale data integration, research databases, semantic search and analytical interfaces for discovering connections across complex scientific and research information.",
+        ],
         title: "Research infrastructure",
         subtitle: "Connecting research data",
         featureLabels: [
@@ -108,8 +114,10 @@ const translations = {
         ],
       },
       {
-        content:
-          "We work with scientific and industrial R&D teams on problems where experimental data, domain knowledge and advanced analytics come together. Our work includes machine learning, image and experimental data analysis, predictive modelling and visual analytics, as well as specialised software for scientific workflows.",
+        content: [
+          "We work with scientific and industrial R&D teams on problems where experimental data, domain knowledge and advanced analytics come together.",
+          "Our work includes machine learning, image and experimental data analysis, predictive modelling and visual analytics, as well as specialised software for scientific workflows.",
+        ],
         title: "Scientific analytics",
         subtitle: "Data science for R&D",
         featureLabels: [
@@ -126,9 +134,10 @@ const translations = {
         ],
       },
       {
-        content:
-          "DALI4US brings data science and machine learning into an interactive learning environment.\n" +
-          "Revelo developed the infrastructure connecting web-based educational content with live Orange workflows, allowing students and teachers to experiment with data and machine-learning methods directly through their browser.\n",
+        content: [
+          "DALI4US brings data science and machine learning into an interactive learning environment.",
+          "Revelo developed the infrastructure connecting web-based educational content with live Orange workflows, allowing students and teachers to experiment with data and machine-learning methods directly through their browser.",
+        ],
         title: "DALI4US",
         subtitle: "Interactive data science education",
         featureLabels: [
