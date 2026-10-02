@@ -14,6 +14,16 @@
 
     .section.section-contact {
         background: none;
+        color: var(--text-color-dark);
+
+        .contact-form .subtitle {
+            color: var(--text-color-medium);
+
+            a {
+                color: var(--cta-color);
+                text-decoration: none;
+            }
+        }
 
         @include respond-to(1024) {
             padding-top: 0;
